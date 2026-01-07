@@ -101,12 +101,9 @@ author:
   bio              : "Junior Mechanical Engineering student seeking design-related internship "
   location         : "Nashville, TN"
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/DrD-Flo"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/dr.dflo"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/salomon-hernandez-soto/"
 
 
 # Site Footer
