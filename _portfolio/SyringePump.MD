@@ -11,8 +11,8 @@ gallery:
   - url: /assets/img/Syringe-Pump-2.png
     image_path: /assets/img/Syringe-Pump-2.png
     alt: "Wiring diagram of the syringe pump"
-  - url: /assets/img/Syringe-Pump-3.JPEG
-    image_path: /assets/img/Syringe-Pump-3.JPEG
+  - url: /assets/img/Syringe-Pump-3.png
+    image_path: /assets/img/Syringe-Pump-3.png
     alt: "Syringe pump while calibrating flow rate"
 ---
 
@@ -40,6 +40,10 @@ logic for syringe pump use
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
 * Syringe pump is capable of 0.1 – 5.0 mL/min flow rate, compatible with 10- and 20-mL syringes, and costs ~$90 to make from scratch
+
+## CAD Model
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Bill of Materials
 Table I - Off-the-shelf Parts
@@ -83,10 +87,6 @@ Table II - Custom 3D-Printable Parts
 | Lid                         |   1   |
 | Box                         |   1   |
 
-The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code).
-
-## CAD Model
-
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code)
 
 {% include gallery caption="This is a sample gallery to go along with this case study." %}
