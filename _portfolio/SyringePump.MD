@@ -44,7 +44,7 @@ logic for syringe pump use
 
 ## CAD Model
 
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## User Instructions
 <img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
@@ -62,9 +62,13 @@ The buttons, from left to right:
   * Red - if empty
 
 User instructions are as follows:
-1. Will
-2. Finish
-3. Later
+1. Update arduino code to match the used hardware (ex. syringe inner diameter)
+2. Plug in the syringe pump to any common wall outlet 
+  * It is recommended that the pump be paused, so that the syringe pump does not immediately start running
+3. Retract the carriage until the syringe can be loaded into the pump. The barrel goes into the syringe-holding end support, and the plunger goes on the carriage, which has two slots. Clamp down the barrel with the M5 clamping screw at the front
+  * The optional compatability sleeve is recommended for 10 mL syringes
+4. Change the location of the empty switch if needed
+5. Begin operation with the front panel
 
 ## Bill of Materials
 Table I - Off-the-shelf Parts
@@ -107,7 +111,9 @@ Table II - Custom 3D-Printable Parts
 | Limit Switch Holder         |   1   |
 | Lid                         |   1   |
 | Box                         |   1   |
+| Compatability Sleeve        |   1   |
 
-The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code)
+
+The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code).
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
