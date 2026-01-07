@@ -40,10 +40,31 @@ logic for syringe pump use
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
 * Syringe pump is capable of 0.1 – 5.0 mL/min flow rate, compatible with 10- and 20-mL syringes, and costs ~$90 to make from scratch
+* See gallery and CAD model for extra information
 
 ## CAD Model
 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+## User Instructions
+<img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
+
+Figure 1 - Labeled front view of the syringe pump
+
+The buttons, from left to right:
+* Potentiometer - Adjusts flow rate from 0.1 - 5.0 mL/min, in increments of 0.1
+* Manual backwards button - Drives carriage backwards when the syringe pump is paused and/or empty
+* Manual forwards button - Drives carriage forwards when the syringe pump is paused
+* Pause button - Pauses operation of the syringe pump
+* LED - Shines...
+  * Green - if running
+  * Yellow - if paused
+  * Red - if empty
+
+User instructions are as follows:
+1. Will
+2. Finish
+3. Later
 
 ## Bill of Materials
 Table I - Off-the-shelf Parts
@@ -89,4 +110,4 @@ Table II - Custom 3D-Printable Parts
 
 The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code)
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="Assorted related pictures from the syringe pump project." %}
