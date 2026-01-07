@@ -47,6 +47,8 @@ Salomon has completed or is completing the following notable classes.
 
 ## Certificates 
 Certified SOLIDWORKS Associate
-<img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:1000px;"/>
 
-<img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:200px;"/>
+<img src="/assets/img/SOLIDWORKS-Associate-Certificate.png" alt="SOLIDWORKS Associate Certificate issued to Salomon" style="width:800px;"/>
+
+
+<img src="/assets/img/Salomon-Professional-Headshot.jpg" alt="David Florian" style="width:200px;"/>
