@@ -43,6 +43,7 @@ logic for syringe pump use
 
 # Bill of Materials
 Table I - Bill of Materials
+
 | **Component**                       | **Count** |
 |-------------------------------------|:---------:|
 | NEMA-17 Motor                       |     1     |
