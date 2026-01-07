@@ -42,7 +42,7 @@ logic for syringe pump use
 * Syringe pump is capable of 0.1 – 5.0 mL/min flow rate, compatible with 10- and 20-mL syringes, and costs ~$90 to make from scratch
 
 ## Bill of Materials
-Table I - Bill of Materials
+Table I - Off-the-shelf Parts
 
 | **Component**                       | **Count** |
 |-------------------------------------|:---------:|
@@ -71,6 +71,22 @@ Table I - Bill of Materials
 
 *Note: BoM does not include minor components such as wires, fasteners used for collar clamps, or washers used for button placement*
 
-3D Printed Components
+Table II - Custom 3D-Printable Parts
+
+| Component                   | Count |
+|-----------------------------|:-----:|
+| Motor Mounting Plate        |   1   |
+| Simple End Support          |   1   |
+| Syringe-holding End Support |   1   |
+| Carriage                    |   1   |
+| Limit Switch Holder         |   1   |
+| Lid                         |   1   |
+| Box                         |   1   |
+
+The Arduino code used to operate the syringe pump can be found here.
+
+## CAD Model
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 {% include gallery caption="This is a sample gallery to go along with this case study." %}
