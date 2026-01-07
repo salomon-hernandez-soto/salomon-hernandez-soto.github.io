@@ -20,7 +20,7 @@ gallery:
 Syringe pumps are devices that administer precise drug doses and calibrate injections.
 They are mostly used in microfluidics as well as in the biomedical field and in hospitals. Syringe
 pumps exist in lots of different variations, with different footprints, varying smart features, and
-with flow rates varying from 0.012 to 300 mL/min [1](https://www.sciencedirect.com/topics/engineering/syringe-pump). However,
+with flow rates varying from 0.012 to 300 mL/min [%5B1%5D](https://www.sciencedirect.com/topics/engineering/syringe-pump). However,
 syringe pumps can cost anywhere between hundreds and thousands of dollars, which limits their
 use due to financial reasons. A more affordable alternative is to design, purchase, and 3D print
 components for a syringe pump. The following sections detail the design process and results of
