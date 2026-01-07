@@ -1,31 +1,52 @@
 ---
 
-title: "About David Florian"
+title: "About Salomon Hernandez-Soto"
 
 ---
 
+## Objective Statement
+I am currently seeking an internship related to engineering design or manufacturing, which will allow me to leverage my CAD skills and sharpen my design methodology.
+
 ## Education
 
-David prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and biotechnology. 
+Salomon is currently a junior in Mechanical Engineering. He has recently been specializing in engineering design and manufacturing courses. 
 
-* University of Virginia
-  * BS Mathematics
-  * BS Biomedical Engineering
 * Vanderbilt University
-  * PhD Biomedical Engineering
+  * B.E Mechanical Engineering
+  * Junior, graduating May 2027
+  * GPA : 4.0 / 4.0
 
 ## Technical Skills
 
-David can operate a number of different computer controlled (CNC) fabrication tools to turn 3D models into real-life parts. David has experience with the following additive manufacturing technologies:
+Salomon has a number of technical skills which he has built through increasingly complex projects and through dedicated engagement with rigorous coursework.
 
+* CAD (SolidWorks, Fusion360, AutoCAD)
 * Fused Filament Fabrication (FFF)
-* Stereolithography (SLA)
-* Selective Laser Sintering (SLS)
-* 3D Inkjet Printing
-* Bioplotting
+* Laser Cutting
+* MIG Welding
+* LabVIEW
+* MATLAB, Java, C++
+* Microcontroller Logic
+* Excel, Word, PowerPoint
 
-## Press 
+## Relevant Classes
 
-The new Digital Fabrication Minor was covered in the [Vanderbilt Hustler](https://vanderbilthustler.com/2022/11/09/digital-fabrication-minor-introduced-for-2022-23-academic-year/).
+Salomon has completed or is completing the following notable classes.
+
+* Additive and Polymer Based Manufacturing
+* Make it Real and Make it Matter
+* How to Make (Almost) Anything and Make it Matter
+* Machine Analysis and Design
+* Rapid Prototyping
+* Mechatronics
+* System Dynamics
+* Mechanics of Materials
+* Dynamics
+* Fluid Mechanics
+* Thermodynamics
+
+## Certificates 
+Certified SOLIDWORKS Associate
+<img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:1000px;"/>
 
 <img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:200px;"/>
