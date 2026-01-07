@@ -16,7 +16,7 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-# Background
+## Background
 Syringe pumps are devices that administer precise drug doses and calibrate injections.
 They are mostly used in microfluidics as well as in the biomedical field and in hospitals. Syringe
 pumps exist in lots of different variations, with different footprints, varying smart features, and
@@ -27,21 +27,21 @@ components for a syringe pump. The following sections detail the design process 
 an affordable syringe pump design, made with custom 3D-printed components, simple machine
 parts, and basic electronic components.
 
-# Problem Statement
+## Problem Statement
 Medical practitioners need an affordable alternative to on-the-market syringe pumps, as even entry level models can cost between hundreds and thousands of dollars.
 
-# Personal Contribution
+## Personal Contribution
 * Led a 4-person team in the design and manufacture of an affordable syringe pump design
 * Took a CAD model from design to real-life assembly using Fusion360 and 3D printing
 * Created an electrical circuit, wired and soldered electrical components, and developed Arduino code for a professional, finished product using proper
 logic for syringe pump use
 * Led the drafting of the technical report detailing the endeavor
 
-# Results
+## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
 * Syringe pump is capable of 0.1 – 5.0 mL/min flow rate, compatible with 10- and 20-mL syringes, and costs ~$90 to make from scratch
 
-# Bill of Materials
+## Bill of Materials
 Table I - Bill of Materials
 
 | **Component**                       | **Count** |
