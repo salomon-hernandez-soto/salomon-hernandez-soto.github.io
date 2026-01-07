@@ -2,18 +2,18 @@
 title: "Custom Syringe Pump"
 excerpt: "This custom syringe pump is capable of 0.1 - 5.0 mL/min flowrate, and is compatible with common 10 mL and 20 mL syringes."
 header:
-  image: /assets/img/Cyber-Scooter-Banner.jpg
-  teaser: /assets/img/Cyber-Scooter-TH.jpg
+  image: /assets/img/Syringe-Pump-Banner.JPEG
+  teaser: /assets/img/Syringe-Pump-Thumbnail.JPEG
 gallery:
-  - url: /assets/img/Cyber-Scooter-1.jpg
-    image_path: assets/img/Cyber-Scooter-1.jpg
-    alt: "placeholder image 1"
-  - url: /assets/img/Cyber-Scooter-2.jpg
-    image_path: assets/img/Cyber-Scooter-2.jpg
-    alt: "placeholder image 2"
-  - url: /assets/img/Cyber-Scooter-3.jpg
-    image_path: assets/img/Cyber-Scooter-3.jpg
-    alt: "placeholder image 3"
+  - url: /assets/img/Syringe-Pump-1.png
+    image_path: /assets/img/Syringe-Pump-1.png
+    alt: "Labeled front view of syringe pump"
+  - url: /assets/img/Syringe-Pump-2.png
+    image_path: /assets/img/Syringe-Pump-2.png
+    alt: "Wiring diagram of the syringe pump"
+  - url: /assets/img/Syringe-Pump-3.JPEG
+    image_path: /assets/img/Syringe-Pump-3.JPEG
+    alt: "Syringe pump while calibrating flow rate"
 ---
 
 ## Background
