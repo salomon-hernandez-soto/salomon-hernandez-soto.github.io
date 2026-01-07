@@ -1,5 +1,5 @@
 ---
-title: "Example Web Page"
+title: "Making That Matters"
 layout: splash
 header:
   overlay_color: "#000"
@@ -8,19 +8,21 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Dr. David Florian is an engineer with a passion for teaching and the open-source community. His area of expertise is 3D printing, with an emphasis on large format pellet extrusion and selective laser sintering."
+excerpt: "Salomon Hernandez-Soto is an engineering student with a passion for engineering design and making his ideas come to life. He is building his skills through design and manufacturing coursework, and through projects which interest him and leverages his knowledge."
+
 feature_row:
   - image_path: assets/img/CNC-Mill-Thumbnail.jpg
-    alt: "CNC Mill"
-    title: "Custom CNC Milling Machine"
-    excerpt: "Built for fabricating aluminum and steel parts."
+    alt: "DIY Syringe Pump"
+    title: "Custom DIY Syringe Pump"
+    excerpt: "Affordable syringe pump alternative, made with off-the-shelf parts and microcontroller logic."
   - image_path: assets/img/Plasma-Cutter-Banner.jpg
-    alt: "placeholder image 2"
-    title: "DIY Plasma Cutter"
-    excerpt: "A hot plasma stream slices through sheet metal."
+    alt: "Revamped Medical Litter Model"
+    title: "Medical Litter Redesign"
+    excerpt: "A specialized medical litter meant for 1-4 person operation, optimized for weight."
   - image_path: assets/img/Zidex-Thumbnail.jpg
-    title: "Bespoke IDEX 3D Printer"
-    excerpt: "Multimaterial printing. "
+    alt: "Custom P-Pod Table" 
+    title: "P-Pod Table Redesign"
+    excerpt: "A custom made, affordable, adjustable table made for a P-Pod chair."
 ---
 
 {% include feature_row %}
