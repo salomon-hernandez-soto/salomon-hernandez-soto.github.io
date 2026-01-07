@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "assets/img/David_Headshot_web2.jpg"
+  avatar           : "assets/img/Salomon-Professional-Headshot.jpg"
   bio              : "Junior Mechanical Engineering student seeking design-related internship "
   location         : "Nashville, TN"
   links:
