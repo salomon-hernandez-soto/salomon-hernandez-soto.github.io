@@ -24,8 +24,11 @@ Salomon has a number of technical skills which he has built through increasingly
 * Fused Filament Fabrication (FFF)
 * Laser Cutting
 * MIG Welding
+* Molding and Casting with Polymers
+* Wet Layup for Fiber-Reinforced Plastics (FRP)
 * LabVIEW
 * MATLAB, Java, C++
+* DynaCAM, LINKAGES
 * Microcontroller Logic
 * Excel, Word, PowerPoint
 
