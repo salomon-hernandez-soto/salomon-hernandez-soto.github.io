@@ -19,7 +19,7 @@ feature_row:
     alt: "Revamped Medical Litter Model"
     title: "Medical Litter Redesign"
     excerpt: "A specialized medical litter meant for 1-4 person operation, optimized for weight."
-  - image_path: assets/img/P-Pod-Table.jpg
+  - image_path: assets/img/P-Pod-Table.JPG
     alt: "Custom P-Pod Table" 
     title: "P-Pod Table Redesign"
     excerpt: "A custom made, affordable, adjustable table made for a P-Pod chair."
