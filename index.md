@@ -8,7 +8,7 @@ header:
   actions:
     - label: "My Projects"
       url: "/portfolio/"
-excerpt: "Salomon Hernandez-Soto is an engineering student with a passion for engineering design and making his ideas come to life. He is building his skills through design and manufacturing coursework, and through projects which interest him and leverages his knowledge."
+excerpt: "Salomon Hernandez-Soto is an engineering student with a passion for engineering design and making his ideas come to life. He is building his skills through design and manufacturing coursework, and through projects which interest him and leverage his knowledge."
 
 feature_row:
   - image_path: assets/img/CNC-Mill-Thumbnail.jpg
