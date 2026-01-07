@@ -83,7 +83,7 @@ Table II - Custom 3D-Printable Parts
 | Lid                         |   1   |
 | Box                         |   1   |
 
-The Arduino code used to operate the syringe pump can be found here.
+The Arduino code used to operate the syringe pump can be found [here](https://github.com/salomon-hernandez-soto/syringe-pump-arduino-code).
 
 ## CAD Model
 
