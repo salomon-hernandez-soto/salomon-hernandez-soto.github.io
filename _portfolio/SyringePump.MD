@@ -67,6 +67,7 @@ Table I - Bill of Materials
 | Mean Well RT-65D Power Supply       |     1     |
 | Breadboard                          |     1     |
 | Arduino Uno                         |     1     |
+
 *Note: BoM does not include minor components such as wires, fasteners used for collar clamps, or washers used for button placement*
 
 3D Printed Components
