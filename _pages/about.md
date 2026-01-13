@@ -65,6 +65,9 @@ Lab Worker, VSVS, Sept. 2023 - Jan. 2024
 * Assisted volunteers in understanding lesson materials and provided support during teaching sessions to grade-school students
 * Diagnosed and repaired broken electronics and tools, facilitating smooth operation of the lab
 
+## Publications/Appearances
+[2027 TOM Makeathon covered here.](https://vanderbilthustler.com/2025/10/28/students-engineer-solutions-for-people-with-disabilities-at-tikkun-olam-makerss-eighth-annual-makeathon/)
+
 ## Certificates 
 Certified SOLIDWORKS Associate
 
