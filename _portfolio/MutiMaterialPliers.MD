@@ -1,5 +1,5 @@
 ---
-title: "Multi Material Pliers"
+title: "Multi Material Pliers (W.I.P)"
 excerpt: "These pliers achieve a mechanical advantage of X with just multi-material and print-in-place methods."
 header:
   image: /assets/img/Syringe-Pump-Banner.JPEG
