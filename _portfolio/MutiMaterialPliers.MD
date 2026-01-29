@@ -15,10 +15,20 @@ gallery:
     image_path: /assets/img/Syringe-Pump-3.png
     alt: "Syringe pump while calibrating flow rate"
 ---
-## 
+
+## Introduction
+
 
 ## CAD Model
 
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+## Design Process
+
+## Plier Specifications
+
+## Print Settings
+
+## Gallery
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
