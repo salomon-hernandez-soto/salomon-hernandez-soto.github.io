@@ -48,8 +48,8 @@ Advanced EZ-Pliers design history:
 | 1       |                                                N/A                                                |
 | 2       |                 Adjusted locking mechanism as it was physically impossible to load                |
 | 3       |            Added jaw teeth, redistributed pivot thicknesses to strengthen weakest point           |
-| 4       | Fixed tolerancing from interference to transitionary at the pivor                                 |
-|         | Adjusted tolerancing from transitionary to clearance at and near pivot, fixed jaw teeth occlusion |
+| 4       |                 Fixed tolerancing from interference to transitionary at the pivot                 |
+| 5       | Adjusted tolerancing from transitionary to clearance at and near pivot, fixed jaw teeth occlusion |
 
 ## Plier Specifications
 
