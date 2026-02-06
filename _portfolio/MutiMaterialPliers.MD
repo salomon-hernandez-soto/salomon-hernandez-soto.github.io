@@ -23,7 +23,7 @@ gallery:
 
 ## CAD Model
 
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281188e565e158b1d8ed?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b60281146f54a76afa0fc44?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Design Process
   Throughout the design process, I made two separate designs, as I wanted to challenge myself above the requirements of the assignment. The first design was meant to be a set of print-in-place pliers, while the second set was meant to be a simple assembly set of pliers, more in line with what typical pliers look like. The second set features greater mechanical properties due to a completely rigid body. However, this also made for a more complex design process, which is why it was done as an additional exercise.
@@ -33,6 +33,9 @@ gallery:
 ## Plier Specifications
 
 ## Print Settings
+  For the plier arms, the following adjusted print settings were used.
+
+  For the TPU springs, the following adjusted print settings were used. Note that these settings generate the spring geometry using infill, without the need to design the pattern in CAD.
 
 ## Gallery
 
