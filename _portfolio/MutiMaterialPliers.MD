@@ -22,7 +22,6 @@ gallery:
 <img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
 Figure 1 - EZ-Pliers being used to pick up a resistor from the wire end
 
-
   Print-in-place refers to interesting or useful objects, often with functional joints, that can be used right off of a 3D printer's print bed [[1]](https://www.thingiverse.com/blog?p=print-in-place-beginners-guide). Print-in-place designs often fall in the categories of hand tools, novelty items, or small toys, which can all be seen [here](https://www.thingiverse.com/tag:print_in_place). Multi-material prints are prints using two different material filaments. These work best when the materials can fuse together. Materials fuse together well when they are chemically and physically similar, such as PLA and PETG. Dissimilar materials can be fused together using mechanical joints (click [here](https://en.wikipedia.org/wiki/Joinery) to learn more).
 
 ## CAD Model
@@ -45,7 +44,6 @@ Figure 2 - Locking mechanism in action
   Ideally, these pliers would both use a multi-material print with part adhesion. However, because the rigid PLA/ABS/PETG CF and elastic TPU segments are not chemically or mechanically similar, they can't fuse together. Thus, both spring components were kept in place through mechanical joints. The simple pliers use a dovetail joint with 0.1 mm of overlap to keep the parts firm in place, and the advanced pliers use a cylindrical joint with 0.1 mm of spacing to allow some rotation as the arms pivot.
 
   The materials used were PLA for some prototype iterations, TPU 95A for all spring components, ABS for the final simple pliers print, and PETG CF for the final advanced pliers print. Note ABS CF was also used but abandoned due to difficult printing and brittle properties compared to PETG CF.
-
 
   Every iteration of the pliers can be seen above (Figures 3 and 4), with the following table dictating the major feature changes of each iteration for both designs. Note that I have named the advanced set the EZ-Pliers, in honor of how simple it is to print and assemble.
 
