@@ -3,23 +3,23 @@ title: "Multi Material Pliers (W.I.P)"
 excerpt: "These pliers achieve a mechanical advantage of 2 with just multi-material and print-in-place methods."
 header:
   image: /assets/img/Syringe-Pump-Banner.JPEG
-  teaser: /assets/img/Syringe-Pump-Thumbnail.JPEG
+  teaser: /assets/img/Pliers-Thumbnail.JPEG
 gallery:
-  - url: /assets/img/Syringe-Pump-1.png
-    image_path: /assets/img/Syringe-Pump-1.png
-    alt: "Labeled front view of syringe pump"
-  - url: /assets/img/Syringe-Pump-2.png
-    image_path: /assets/img/Syringe-Pump-2.png
-    alt: "Wiring diagram of the syringe pump"
-  - url: /assets/img/Syringe-Pump-3.png
-    image_path: /assets/img/Syringe-Pump-3.png
-    alt: "Syringe pump while calibrating flow rate"
+  - url: /assets/img/EZ-Pliers-Disassembled.JPEG
+    image_path: /assets/img/EZ-Pliers-Disassembled.JPEG
+    alt: "Picture of disassembled EZ-Pliers (3 Parts)"
+  - url: /assets/img/Jaw-Closeup.JPEG
+    image_path: /assets/img/Jaw-Closeup.JPEG
+    alt: "Closeup picture of the Crab Claw and EZ-Pliers' jaws"
+  - url: /assets/img/Spring-Prototypes.JPEG
+    image_path: /assets/img/Spring-Prototypes.JPEG
+    alt: "Picture of all elastic spring prototypes, used to test stiffness and joinery tolerancing"
 ---
 
 ## Introduction
   The aim of this project was to create some needle nose pliers using either print-in-place methods or a simple 3-piece assembly while using multiple materials. Success was dictated by precision high enough to pick up a through-hole resistor (Figure 1).
 
-<img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
+<img src="/assets/img/Pliers-Gripping-Resistor.gif" alt="EZ-Pliers picking up a resistor with precision" style="width:800px;"/>
 Figure 1 - EZ-Pliers being used to pick up a resistor from the wire end
 
   Print-in-place refers to interesting or useful objects, often with functional joints, that can be used right off of a 3D printer's print bed [[1]](https://www.thingiverse.com/blog?p=print-in-place-beginners-guide). Print-in-place designs often fall in the categories of hand tools, novelty items, or small toys, which can all be seen [here](https://www.thingiverse.com/tag:print_in_place). Multi-material prints are prints using two different material filaments. These work best when the materials can fuse together. Materials fuse together well when they are chemically and physically similar, such as PLA and PETG. Dissimilar materials can be fused together using mechanical joints (click [here](https://en.wikipedia.org/wiki/Joinery) to learn more).
@@ -38,7 +38,7 @@ Advanced, 3-Part Assembly (Named the "EZ-Pliers")
 
   For both pliers, a spring component was used made out of TPU, though this spring component served different functions in both designs. In the simpler print-in-place design, the spring works by putting the square in shear, which tightents the jaws as the spring deforms. In the more advanced assembly design, the spring also works by putting the square in shear, but is now mainly used to return the pliers to their original position once released. Instead of using an elastic pivot, the advanced pliers use a rigid locking mechanism to form a pivot, allowing for greater force application. The pivot design (Figure 2) takes advantage of the fact that 30 degree overhangs do not require support material to print.
 
-<img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
+<img src="/assets/img/EZ-Pliers-Lock-Anim-Boomerang.gif" alt="Boomerang GIF of locking mechanism in EZ-Pliers" style="width:800px;"/>
 Figure 2 - Locking mechanism in action
 
   Ideally, these pliers would both use a multi-material print with part adhesion. However, because the rigid PLA/ABS/PETG CF and elastic TPU segments are not chemically or mechanically similar, they can't fuse together. Thus, both spring components were kept in place through mechanical joints. The simple pliers use a dovetail joint with 0.1 mm of overlap to keep the parts firm in place, and the advanced pliers use a cylindrical joint with 0.1 mm of spacing to allow some rotation as the arms pivot.
@@ -47,11 +47,11 @@ Figure 2 - Locking mechanism in action
 
   Every iteration of the pliers can be seen above (Figures 3 and 4), with the following table dictating the major feature changes of each iteration for both designs. Note that I have named the advanced set the EZ-Pliers, in honor of how simple it is to print and assemble.
 
-<img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
-Figure 3 - Every iteration of the Crab Claw, from V.1 (left) to V.3 (right)
+<img src="/assets/img/Crab-Claw-Iterations.JPEG" alt="Picture of Crab Claw Iterations" style="width:800px;"/>
+Figure 3 - Every iteration of the Crab Claw, from v1 (left) to v3 (right). Note only the jaws were changed from v2 to v3
 
-<img src="/assets/img/Syringe-Pump-1.png" alt="Labeled front view of syringe pump" style="width:800px;"/>
-Figure 4 - Nearly every iteration of the EZ-Pliers, from V.2 (left) to V.5 (right). Note the first iteration is missing, but looks nearly identical to the second iteration.
+<img src="/assets/img/EZ-Pliers-Iterations.JPEG" alt="Picture of EZ-Pliers Iterations" style="width:800px;"/>
+Figure 4 - Nearly every iteration of the EZ-Pliers, from v2 (left) to v5 (right). Note the first iteration is missing as it was lost, but it looks nearly identical to the second iteration.
 
 Simple Pliers design history:
 
