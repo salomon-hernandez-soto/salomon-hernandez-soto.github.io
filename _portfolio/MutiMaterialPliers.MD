@@ -2,17 +2,17 @@
 title: "Multi Material Pliers (W.I.P)"
 excerpt: "These pliers achieve a mechanical advantage of 2 with just multi-material and print-in-place methods."
 header:
-  image: /assets/img/Syringe-Pump-Banner.JPEG
+  image: /assets/img/Pliers-Banner.JPEG
   teaser: /assets/img/Pliers-Thumbnail.JPEG
 gallery:
-  - url: /assets/img/EZ-Pliers-Disassembled.JPEG
-    image_path: /assets/img/EZ-Pliers-Disassembled.JPEG
+  - url: /assets/img/EZ-Pliers-Disassembled.png
+    image_path: /assets/img/EZ-Pliers-Disassembled.png
     alt: "Picture of disassembled EZ-Pliers (3 Parts)"
-  - url: /assets/img/Jaw-Closeup.JPEG
-    image_path: /assets/img/Jaw-Closeup.JPEG
+  - url: /assets/img/Jaw-Closeup.png
+    image_path: /assets/img/Jaw-Closeup.png
     alt: "Closeup picture of the Crab Claw and EZ-Pliers' jaws"
-  - url: /assets/img/Spring-Prototypes.JPEG
-    image_path: /assets/img/Spring-Prototypes.JPEG
+  - url: /assets/img/Spring-Prototypes.png
+    image_path: /assets/img/Spring-Prototypes.png
     alt: "Picture of all elastic spring prototypes, used to test stiffness and joinery tolerancing"
 ---
 
