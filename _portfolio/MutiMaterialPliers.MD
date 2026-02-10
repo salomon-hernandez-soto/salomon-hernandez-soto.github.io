@@ -58,7 +58,7 @@ Simple Pliers design history:
 | Version |                                          Changes                                         |
 |---------|:----------------------------------------------------------------------------------------:|
 | 1       |                                            N/A                                           |
-| 2       | Increased center spring size, decreased open arm distance, decreased closed jaw distance |
+| 2       | Increased center spring size, increased open arm distance, decreased closed jaw distance |
 | 3       |                            Achieved zero closed jaw distance                             |
 
 Advanced EZ-Pliers design history:
@@ -98,14 +98,14 @@ For the EZ-Plier arms, the following print settings were adjusted, using PETG-CF
 | Perimeters            |       5       |
 | Infill Pattern        |     Gyroid    |
 
-  For the TPU springs, the following print settings were adjusted, using TPU 95A filament with a copper 0.6 mm nozzle. Note that these settings generate the spring geometry using infill, without the need to design the pattern in CAD. The infill angle is meant to put the infill parallel to the square sides for a square grid.
+  For the TPU springs, the following print settings were adjusted, using TPU 95A filament with a copper 0.6 mm nozzle. Note that these settings generate the spring geometry using infill, without the need to design the pattern in a CAD software. The infill angle is meant to put the infill parallel to the square sides for a square grid.
 
 | Setting Name   | Setting Value |
 |----------------|:-------------:|
 | Top Layers     |       0       |
 | Bottom Layers  |       0       |
 | Infill Density |      25%      |
-| Perimeters     |       5       |
+| Perimeters     |       4       |
 | Infill Angle   |   0 degrees   |
 | Infill Pattern |      Grid     |
 
