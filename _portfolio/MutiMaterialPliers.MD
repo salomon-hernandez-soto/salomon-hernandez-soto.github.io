@@ -1,5 +1,5 @@
 ---
-title: "Multi Material Pliers (W.I.P)"
+title: "Multi Material Pliers"
 excerpt: "These pliers achieve a mechanical advantage of 2 with just multi-material and print-in-place methods."
 header:
   image: /assets/img/Pliers-Banner.JPEG
