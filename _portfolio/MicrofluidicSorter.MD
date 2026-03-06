@@ -1,6 +1,6 @@
 ---
-title: "Microfluidic Particle Sorter"
-excerpt: "This custom syringe pump is capable of 0.1 - 5.0 mL/min flowrate, and is compatible with common 10 mL and 20 mL syringes."
+title: "Microfluidic Particle Sorter (W.I.P)"
+excerpt: "This microfluidic particle sorter is capable of sorting ~150 micron from ~450 micron particles."
 header:
   image: /assets/img/Syringe-Pump-Banner.JPEG
   teaser: /assets/img/Syringe-Pump-Thumbnail.JPEG
@@ -17,10 +17,18 @@ gallery:
 ---
 
 ## Background
-Sorting small particles is a popular and widely applicable challenge in microfluidics and medicine. This is because this simple function can lead to several powerful applications, such as separating cancer and blood cells for the study of circulating tumor cells (CTC's) [[1]](https://www.sciencedirect.com/science/article/pii/S0255270124004252#bib0131).
+Sorting small particles is a popular and widely applicable challenge in microfluidics and medicine. This is because this simple function can lead to several powerful applications, such as separating cancer and blood cells for the study of circulating tumor cells (CTC's) [[1]](https://www.sciencedirect.com/science/article/pii/S0255270124004252#bib0131). There are several different methods for separating small particles, such as through filtering or through centrifugation. The method employed here, however, is pinch flow fractionation.
+
+(Insert pic of PFF here)
+
+Figure 1 - Pinch flow fractionation visualization
+
+Pinch flow fractionation works through taking advantage of the natural flow spread of fluid past a sharp exit. When fluid flows from a thin channel to a broad one, the streamlines in the flow spread out proprtional to the width ratio between the two channels. In PFF, a particle containing inlet stream and a high flow rate fluid stream are made to collide at an angle, pushing all the particles to the upper channel wall. Once the flow spreads out, the particles spread out into streamlines based on their center of mass. This results in smaller particles ending up above larger ones, since their center of mass is closer to the narrow channel's upper wall. In more rigorous terms, the final position of the particles can be predicted based on the particle diameter, the pinched channel width, and the broad channel width. Thus by splitting the resulting flow, small particles can be sorted into bins of a range of sizes.
+
+In practice, differences in flow resistance and flow rate, siphoning effects, presence of bubbles, and turbulent flow regions make this solution non-trivial to implement. This design then serves as a way to advance the efforts in implementing PFF in a simple manner, using as few outlet channels or active flow rate controls as possible.
 
 ## Problem Statement
-Medical practitioners need an affordable alternative to on-the-market syringe pumps, as even entry level models can cost between hundreds and thousands of dollars.
+Biomedical engineers need a better way to implement PFF, as current designs suffer from sensitive flow pattern controls and unreliable performance.
 
 ## Personal Contribution
 * Led a 4-person team in the design and manufacture of an affordable syringe pump design
