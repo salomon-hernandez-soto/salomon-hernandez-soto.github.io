@@ -40,15 +40,15 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 
 ## Design
 
-\\[p(\theta) = \mathbf{\prod}_{i,c}p(\mathbf{\theta}^i(c))\\]
-
-$$ a^2 + b^2 = c^2 $$
-
 (Insert pic of my design here)
 
 Figure 2 - My design for a PFF device
 
-  For the design, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r). The overall design was mainly 
+My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r).
+
+For a simple PFF device, the location of the resulting particles can be predicted through the following equation...
+
+
 
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
