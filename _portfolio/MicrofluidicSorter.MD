@@ -40,6 +40,8 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 
 ## Design
 
+$$ a^2 + b^2 = c^2 $$
+
 (Insert pic of my design here)
 
 Figure 2 - My design for a PFF device
