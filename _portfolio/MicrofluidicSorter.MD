@@ -44,6 +44,8 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 
 Figure 2 - My design for a PFF device
 
+  For the design, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r). The overall design was mainly 
+
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
 * Syringe pump is capable of 0.1 – 5.0 mL/min flow rate, compatible with 10- and 20-mL syringes, and costs ~$90 to make from scratch
