@@ -48,7 +48,13 @@ My design was informed by a couple of factors. To begin, since there was only ti
 
 For a simple PFF device, the location of the resulting particles can be predicted through the following equation...
 
+(Insert labeled pic of major dimensions here)
 
+Figure 3 - Major dimensions labeled on a PFF device
+
+$$ Y_0=(w_p-\frac{D}{2})\frac{w_b}{w_p} $$
+
+where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom of the broad region, $$ D $$ is the diameter of the particle, $$ w_p $$ is the width of the pinched region, and $$ w_b $$ is the width of the broad region.
 
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
