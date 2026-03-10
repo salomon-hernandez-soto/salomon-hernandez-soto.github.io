@@ -54,7 +54,13 @@ Figure 3 - Major dimensions labeled on a PFF device
 
 $$ Y_0=(w_p-\frac{D}{2})\frac{w_b}{w_p} $$
 
-where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom of the broad region, $$ D $$ is the diameter of the particle, $$ w_p $$ is the width of the pinched region, and $$ w_b $$ is the width of the broad region.
+where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom of the broad region, $$ D $$ is the diameter of the particle, $$ w_p $$ is the width of the pinched region, and $$ w_b $$ is the width of the broad region. This equations suggests the following:
+
+* Higher broad to pinched width ratio increases flow separation
+* Smaller particles end up at higher positions
+* The minimum pinched channel width is limited by the largest particle diameter
+
+Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between (X - X) mm, and the large ones within a band between (X - X) mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide.
 
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
