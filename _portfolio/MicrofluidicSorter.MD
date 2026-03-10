@@ -28,14 +28,21 @@ Pinch flow fractionation works through taking advantage of the natural flow spre
 In practice, differences in flow resistance and flow rate, siphoning effects, presence of bubbles, and turbulent flow regions make this solution non-trivial to implement. This design then serves as a way to advance the efforts in implementing PFF in a simple manner, using as few outlet channels or active flow rate controls as possible.
 
 ## Problem Statement
-Biomedical engineers need a better way to implement PFF, as current designs suffer from sensitive flow pattern controls and unreliable performance.
+Biomedical engineers need a better way to implement PFF, as current designs suffer from sensitive flow pattern controls and unreliable performance
 
-## Personal Contribution
-* Led a 4-person team in the design and manufacture of an affordable syringe pump design
-* Took a CAD model from design to real-life assembly using Fusion360 and 3D printing
-* Created an electrical circuit, wired and soldered electrical components, and developed Arduino code for a professional, finished product using proper
-logic for syringe pump use
-* Led the drafting of the technical report detailing the endeavor
+## Functional Requirements
+* Must fit in a 50 x 75 mm wide microscope slide
+* Must sort 125 - 150 μm particles from 425 - 500 μm particles
+* Mold must be made through SLA methods for small feature sizes
+* Design must leverage PFF and not use filtering methods
+* Bubbles must be minimized
+* Aspect ratio must be <4:1 (height to width of features)
+
+## Design
+
+(Insert pic of my design here)
+
+Figure 2 - My design for a PFF device
 
 ## Results
 * Created a syringe pump capable of independent operation, only requiring wall outlet power to operate
