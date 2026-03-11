@@ -60,9 +60,43 @@ where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom 
 * Smaller particles end up at higher positions
 * The minimum pinched channel width is limited by the largest particle diameter
 
-Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between (X - X) mm, and the large ones within a band between (X - X) mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide.
+Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between 26.18 - 26.94 mm, and the large ones within a band between 17.25 - 19.59 mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide.
 
+To tackle the flow balancing problem, a strong attempt was made to keep the pressure differential for each outlet channel equal. The following derivation shows the equation used behind this method, taking into account the outlet channels are rectangular in shape. Note that outlet A is the small particle channel, outlet B is the large particle channel, and outlet C is the buffer channel. Outlets A and C share all geometry due to symmetry.
 
+$$
+
+\Delta P_{A/C} = \Delta P_B
+
+\Rightarrow R_{A/C}Q_{A/C} = R_BQ_B
+
+\Rightarrow R_{A/C} \frac{Q_{A/C}}{Q_B} = R_B
+
+$$
+
+Now relating the geometry of the outlets to the flow rate...
+
+$$
+
+\frac{Q_{A/C}}{8mm} = \frac{Q_B}{14mm}
+
+\Rightarrow \frac{Q_{A/C}}{Q_B} = \frac{8}{14}
+
+\Rightarrow \frac{8}{14}R_{A/C} = R_B
+
+$$
+
+Plugging back to the original equation..
+
+$$
+
+\Rightarrow \frac{8}{14}R_{A/C} = R_B
+
+\Rightarrow \frac{8}{14} (\frac{1}{1-0.63\frac{h_{A/C}}{w_{A/C}}} \frac{12 \mu_{A/C} l_{A/C}}{h_{A/C}^3 w_{A/C}}) = \frac{1}{1-0.63\frac{h_B}{w_B}} \frac{12 \mu_B l_B}{h_B^3 w_B}
+
+\Rightarrow l_{A/C} = \frac{14}{8}l_B
+
+$$
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
 
