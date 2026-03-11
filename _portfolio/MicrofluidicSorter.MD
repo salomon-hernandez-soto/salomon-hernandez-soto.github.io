@@ -38,6 +38,9 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 * Bubbles must be minimized
 * Aspect ratio must be <4:1 (height to width of features)
 
+## CAD Model
+(Insert CAD model here)
+
 ## Design
 
 (Insert pic of my design here)
@@ -60,7 +63,7 @@ where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom 
 * Smaller particles end up at higher positions
 * The minimum pinched channel width is limited by the largest particle diameter
 
-Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between 26.18 - 26.94 mm, and the large ones within a band between 17.25 - 19.59 mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide.
+Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between 26.18 - 26.94 mm, and the large ones within a band between 17.25 - 19.59 mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide. Note also that the flow separation points are rounded, to reduce bubbles and promote laminar flow.
 
 To tackle the flow balancing problem, a strong attempt was made to keep the pressure differential for each outlet channel equal. The following derivation shows the equation used behind this method, taking into account the outlet channels are rectangular in shape. Note that outlet A is the small particle channel, outlet B is the large particle channel, and outlet C is the buffer channel. Outlets A and C share all geometry due to symmetry.
 
@@ -84,7 +87,25 @@ $$ \Rightarrow \frac{8}{14}R_{A/C} = R_B $$
 
 $$ \Rightarrow \frac{8}{14} (\frac{1}{1-0.63\frac{h_{A/C}}{w_{A/C}}} \frac{12 \mu_{A/C} l_{A/C}}{h_{A/C}^3 w_{A/C}}) = \frac{1}{1-0.63\frac{h_B}{w_B}} \frac{12 \mu_B l_B}{h_B^3 w_B} $$
 
-$$ \Rightarrow l_{A/C} = \frac{14}{8}l_B $$
+And finally since the fluid viscosity is constant for both outlets, and if we keep the width and height of each outlet channel the same this simplifies to...
+
+$$ l_{A/C} = \frac{14}{8}l_B $$
+
+Some additional considerations are maintaining laminar flow, which is made easier with a smaller width and height, and reducing the resistance contribution of the sloped gradient region and the external outlet tubing, which is done by increasing the resistance of the straight rectangular outlet channels. From this, the outlet channel width was made 1.4 mm, the outlet channel height was made 0.7 mm, the outlet B length was made 19 mm, and the outlet A and C lengths were made 33.25 mm.
+
+Overall, the design choices were made to be conducive for parallel streamlines and ideal flow.
+
+## Instructions
+
+The creation of the microfluidic device was quite simple, but was done carefully to avoid any defects. The inside of the mold was never touched to avoid affecting the roughness of the casted part.
+
+Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibility of design features. A layer height resolution of 0.05 mm was used to ensure all height dimensions were kept accurate. The mold was cleaned for 5 minutes while attached to the buildplate, and 5 miniutes while off the buildplate, keeping this time short to avoid IPA absorption. The mold was dried at an incline for 45 minutes to allow IPA to dry and drip out. The mold was then blown with compressed air to dislodge debris. Lastly, the mold was cured at room temp for 1 minute only, to ensure no warping occurs.
+
+This mold was then treated and the final part was casted out of PDMS.
+
+## Discussion
+
+
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
 
