@@ -111,4 +111,4 @@ For the EZ-Plier arms, the following print settings were adjusted, using PETG-CF
 
 ## Gallery
 
-{% include gallery caption="Assorted related pictures from the syringe pump project." %}
+{% include gallery caption="Assorted related pictures from the pliers project." %}
