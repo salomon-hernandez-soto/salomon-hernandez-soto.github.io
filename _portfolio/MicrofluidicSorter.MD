@@ -64,39 +64,27 @@ Taking these into consideration, the pinched width was made 600 μm and the broa
 
 To tackle the flow balancing problem, a strong attempt was made to keep the pressure differential for each outlet channel equal. The following derivation shows the equation used behind this method, taking into account the outlet channels are rectangular in shape. Note that outlet A is the small particle channel, outlet B is the large particle channel, and outlet C is the buffer channel. Outlets A and C share all geometry due to symmetry.
 
-$$
+$$ \Delta P_{A/C} = \Delta P_B $$
 
-\Delta P_{A/C} = \Delta P_B
+$$ \Rightarrow R_{A/C}Q_{A/C} = R_BQ_B $$
 
-\Rightarrow R_{A/C}Q_{A/C} = R_BQ_B
-
-\Rightarrow R_{A/C} \frac{Q_{A/C}}{Q_B} = R_B
-
-$$
+$$ \Rightarrow R_{A/C} \frac{Q_{A/C}}{Q_B} = R_B $$
 
 Now relating the geometry of the outlets to the flow rate...
 
-$$
+$$ \frac{Q_{A/C}}{8mm} = \frac{Q_B}{14mm} $$
 
-\frac{Q_{A/C}}{8mm} = \frac{Q_B}{14mm}
+$$ \Rightarrow \frac{Q_{A/C}}{Q_B} = \frac{8}{14} $$
 
-\Rightarrow \frac{Q_{A/C}}{Q_B} = \frac{8}{14}
-
-\Rightarrow \frac{8}{14}R_{A/C} = R_B
-
-$$
+$$ \Rightarrow \frac{8}{14}R_{A/C} = R_B $$
 
 Plugging back to the original equation..
 
-$$
+$$ \Rightarrow \frac{8}{14}R_{A/C} = R_B $$
 
-\Rightarrow \frac{8}{14}R_{A/C} = R_B
+$$ \Rightarrow \frac{8}{14} (\frac{1}{1-0.63\frac{h_{A/C}}{w_{A/C}}} \frac{12 \mu_{A/C} l_{A/C}}{h_{A/C}^3 w_{A/C}}) = \frac{1}{1-0.63\frac{h_B}{w_B}} \frac{12 \mu_B l_B}{h_B^3 w_B} $$
 
-\Rightarrow \frac{8}{14} (\frac{1}{1-0.63\frac{h_{A/C}}{w_{A/C}}} \frac{12 \mu_{A/C} l_{A/C}}{h_{A/C}^3 w_{A/C}}) = \frac{1}{1-0.63\frac{h_B}{w_B}} \frac{12 \mu_B l_B}{h_B^3 w_B}
-
-\Rightarrow l_{A/C} = \frac{14}{8}l_B
-
-$$
+$$ \Rightarrow l_{A/C} = \frac{14}{8}l_B $$
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
 
