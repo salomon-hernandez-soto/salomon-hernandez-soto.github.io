@@ -20,7 +20,6 @@ gallery:
 Sorting small particles is a popular and widely applicable challenge in microfluidics and medicine. This is because this simple function can lead to several powerful applications, such as separating cancer and blood cells for the study of circulating tumor cells (CTC's) [[1]](https://www.sciencedirect.com/science/article/pii/S0255270124004252#bib0131). There are several different methods for separating small particles, such as through filtering or through centrifugation. These methods, however, may be prone to clogging or may require active filtering. The method employed here is pinch flow fractionation, which runs passively, continuously, and with a lower chance for clogging than other techniques.
 
 (Insert pic of PFF here)
-
 Figure 1 - Pinch flow fractionation visualization
 
 Pinch flow fractionation works through taking advantage of the natural flow spread of fluid past a sharp exit. When fluid flows from a thin channel to a broad one, the streamlines in the flow spread out proprtional to the width ratio between the two channels. In PFF, a particle containing inlet stream and a high flow rate fluid stream are made to collide at an angle, pushing all the particles to the upper channel wall. Once the flow spreads out, the particles spread out into streamlines based on their center of mass. This results in smaller particles ending up above larger ones, since their center of mass is closer to the narrow channel's upper wall. In more rigorous terms, the final position of the particles can be predicted based on the particle diameter, the pinched channel width, and the broad channel width. Thus by splitting the resulting flow, small particles can be sorted into bins of a range of sizes.
@@ -39,21 +38,18 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 * Aspect ratio must be <4:1 (height to width of features)
 
 ## CAD Model
-(Insert CAD model here)
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811109f64f9701b0d9d?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Design
-
 (Insert pic of my design here)
-
 Figure 2 - My design for a PFF device
 
 My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r).
 
 For a simple PFF device, the location of the resulting particles can be predicted through the following equation...
 
-(Insert labeled pic of major dimensions here)
-
-Figure 3 - Major dimensions labeled on a PFF device
+<img src="/assets/img/PFF-Visualization.png" alt="Visualization of major dimensions in a PFF device" style="width:800px;"/>
+Figure 3 - Major dimensions labeled on a PFF diagram
 
 $$ Y_0=(w_p-\frac{D}{2})\frac{w_b}{w_p} $$
 
@@ -96,7 +92,6 @@ Some additional considerations are maintaining laminar flow, which is made easie
 Overall, the design choices were made to be conducive for parallel streamlines and ideal flow.
 
 ## Instructions
-
 The creation of the microfluidic device was quite simple, but was done carefully to avoid any defects. The inside of the mold was never touched to avoid affecting the roughness of the casted part.
 
 Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibility of design features. A layer height resolution of 0.05 mm was used to ensure all height dimensions were kept accurate. The mold was cleaned for 5 minutes while attached to the buildplate, and 5 miniutes while off the buildplate, keeping this time short to avoid IPA absorption. The mold was dried at an incline for 45 minutes to allow IPA to dry and drip out. The mold was then blown with compressed air to dislodge debris. Lastly, the mold was cured at room temp for 1 minute only, to ensure no warping occurs.
@@ -104,7 +99,6 @@ Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibilit
 This mold was then treated and the final part was casted out of PDMS.
 
 ## Discussion
-
 Resin printing was chosen for the manufacturing method of the mold. This is because resin printing allows for quick printing of fine detail parts. On this note however, resin printing does have a resolution limit. For example, the smallest layer height that can be made is 25 microns, and the XY resolution for a Form 4 printer is 50 microns. On top of fabrication challenges with casting tiny features, this puts a limit on how small of a particle the device can sort, since for larger flow separation you need either a very narrow pinched channel or a very wide broad channel.
 
 On a related note, to allow for more particles of different sizes, the device would likely have to be scaled up, and the outlet channel locations and lengths would have to be recalculated according to the earlier calculations. However, the methods detailed earlier make this process replicable, though the device may not be able to be kept symmetrical based on the expected particle sizes and number of size categories needed.
