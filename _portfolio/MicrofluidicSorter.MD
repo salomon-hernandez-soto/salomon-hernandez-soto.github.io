@@ -105,6 +105,9 @@ This mold was then treated and the final part was casted out of PDMS.
 
 ## Discussion
 
+Resin printing was chosen for the manufacturing method of the mold. This is because resin printing allows for quick printing of fine detail parts. On this note however, resin printing does have a resolution limit. For example, the smallest layer height that can be made is 25 microns, and the XY resolution for a Form 4 printer is 50 microns. On top of fabrication challenges with casting tiny features, this puts a limit on how small of a particle the device can sort, since for larger flow separation you need either a very narrow pinched channel or a very wide broad channel.
+
+On a related note, to allow for more particles of different sizes, the device would likely have to be scaled up, and the outlet channel locations and lengths would have to be recalculated according to the earlier calculations. However, the methods detailed earlier make this process replicable, though the device may not be able to be kept symmetrical based on the expected particle sizes and number of size categories needed.
 
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
