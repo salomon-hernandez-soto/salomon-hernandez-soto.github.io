@@ -2,7 +2,7 @@
 title: "Microfluidic Particle Sorter (W.I.P)"
 excerpt: "This microfluidic particle sorter is capable of sorting ~150 micron from ~450 micron particles."
 header:
-  image: /assets/img/Syringe-Pump-Banner.JPEG
+  image: /assets/img/PFF-Banner.JPEG
   teaser: /assets/img/Syringe-Pump-Thumbnail.JPEG
 gallery:
   - url: /assets/img/Syringe-Pump-1.png
@@ -96,7 +96,10 @@ The creation of the microfluidic device was quite simple, but was done carefully
 
 Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibility of design features. A layer height resolution of 0.05 mm was used to ensure all height dimensions were kept accurate. The mold was cleaned for 5 minutes while attached to the buildplate, and 5 miniutes while off the buildplate, keeping this time short to avoid IPA absorption. The mold was dried at an incline for 45 minutes to allow IPA to dry and drip out. The mold was then blown with compressed air to dislodge debris. Lastly, the mold was cured at room temp for 1 minute only, to ensure no warping occurs.
 
-This mold was then treated and the final part was casted out of PDMS.
+<img src="/assets/img/Plasma-Treating-Image.jpg" alt="Plasma treating of the PDMS mold and a glass slide" style="width:800px;"/>
+Figure 4 - Plasma treating of the mold
+
+This mold was then casted out of PDMS and treated so that it could bond with a glass slide.
 
 ## Discussion
 Resin printing was chosen for the manufacturing method of the mold. This is because resin printing allows for quick printing of fine detail parts. On this note however, resin printing does have a resolution limit. For example, the smallest layer height that can be made is 25 microns, and the XY resolution for a Form 4 printer is 50 microns. On top of fabrication challenges with casting tiny features, this puts a limit on how small of a particle the device can sort, since for larger flow separation you need either a very narrow pinched channel or a very wide broad channel.
