@@ -41,7 +41,7 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811109f64f9701b0d9d?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Design
-(Insert pic of my design here)
+<img src="/assets/img/PFF-Thumbnail.JPEG" alt="Picture of the finished casted PFF sorter part" style="width:800px;"/>
 Figure 2 - My design for a PFF device
 
 My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r).
