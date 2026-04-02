@@ -3,7 +3,7 @@ title: "Microfluidic Particle Sorter (W.I.P)"
 excerpt: "This microfluidic particle sorter is capable of sorting ~150 micron from ~450 micron particles."
 header:
   image: /assets/img/PFF-Banner.JPEG
-  teaser: /assets/img/Syringe-Pump-Thumbnail.JPEG
+  teaser: /assets/img/PFF-Thumbnail.JPEG
 gallery:
   - url: /assets/img/Syringe-Pump-1.png
     image_path: /assets/img/Syringe-Pump-1.png
@@ -20,7 +20,7 @@ gallery:
 Sorting small particles is a popular and widely applicable challenge in microfluidics and medicine. This is because this simple function can lead to several powerful applications, such as separating cancer and blood cells for the study of circulating tumor cells (CTC's) [[1]](https://www.sciencedirect.com/science/article/pii/S0255270124004252#bib0131). There are several different methods for separating small particles, such as through filtering or through centrifugation. These methods, however, may be prone to clogging or may require active filtering. The method employed here is pinch flow fractionation, which runs passively, continuously, and with a lower chance for clogging than other techniques.
 
 <img src="/assets/img/PFF-Paper-Figure-1.jpg" alt="Visualization of PFF sorting two particles in a fluid flow" style="width:800px;"/>
-Figure 1 - Pinch flow fractionation visualization from the original 2004 paper [[1]](https://pubs.acs.org/doi/10.1021/ac049863r)
+Figure 1 - Pinch flow fractionation visualization from the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r)
 
 Pinch flow fractionation works through taking advantage of the natural flow spread of fluid past a sharp exit. When fluid flows from a thin channel to a broad one, the streamlines in the flow spread out proprtional to the width ratio between the two channels. In PFF, a particle containing inlet stream and a high flow rate fluid stream are made to collide at an angle, pushing all the particles to the upper channel wall. Once the flow spreads out, the particles spread out into streamlines based on their center of mass. This results in smaller particles ending up above larger ones, since their center of mass is closer to the narrow channel's upper wall. In more rigorous terms, the final position of the particles can be predicted based on the particle diameter, the pinched channel width, and the broad channel width. Thus by splitting the resulting flow, small particles can be sorted into bins of a range of sizes.
 
@@ -44,7 +44,7 @@ Biomedical engineers need a better way to implement PFF, as current designs suff
 (Insert pic of my design here)
 Figure 2 - My design for a PFF device
 
-My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[1]](https://pubs.acs.org/doi/10.1021/ac049863r).
+My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r).
 
 For a simple PFF device, the location of the resulting particles can be predicted through the following equation...
 
@@ -94,10 +94,13 @@ Overall, the design choices were made to be conducive for parallel streamlines a
 ## Instructions
 The creation of the microfluidic device was quite simple, but was done carefully to avoid any defects. The inside of the mold was never touched to avoid affecting the roughness of the casted part.
 
+<img src="/assets/img/PFF-Mold.JPEG" alt="Clear resin-printed mold used to cast the microfluidic device" style="width:800px;"/>
+Figure 4 - Mold used to cast the particle sorter body
+
 Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibility of design features. A layer height resolution of 0.05 mm was used to ensure all height dimensions were kept accurate. The mold was cleaned for 5 minutes while attached to the buildplate, and 5 miniutes while off the buildplate, keeping this time short to avoid IPA absorption. The mold was dried at an incline for 45 minutes to allow IPA to dry and drip out. The mold was then blown with compressed air to dislodge debris. Lastly, the mold was cured at room temp for 1 minute only, to ensure no warping occurs.
 
 <img src="/assets/img/Plasma-Treating-Image.jpg" alt="Plasma treating of the PDMS mold and a glass slide" style="width:800px;"/>
-Figure 4 - Plasma treating of the mold
+Figure 5 - Plasma treating of the mold
 
 This mold was then casted out of PDMS and treated so that it could bond with a glass slide.
 
@@ -106,6 +109,7 @@ Resin printing was chosen for the manufacturing method of the mold. This is beca
 
 On a related note, to allow for more particles of different sizes, the device would likely have to be scaled up, and the outlet channel locations and lengths would have to be recalculated according to the earlier calculations. However, the methods detailed earlier make this process replicable, though the device may not be able to be kept symmetrical based on the expected particle sizes and number of size categories needed.
 
+As for the performance of the device, difficulty with casting the device caused the flat surface of the device to be tilted, distorting the resistance of the channels and the performance of the device. Additionally, a thin casted layer made it difficult to anchor the microfluidic barbs. Lastly, operator error caused the device to malfunction. Clearly, the major improvements lie with the testing of the devices, such as creating a stand for the particle-containing syringe pump, improving casting technique, and perhaps replacing flexible tubing with rigid tubing, to avoid disturbances. The device could have also been optimized for easier casting by increasing the height of the channels, or optimized for easier testing by increasing the width of the pinched and broad section to avoid clogging or collisions. However, these come with the drawbacks of space limitations on the glass slide and potentially damaging the laminar flow profile of the device. One interesting feature to explore would be the addition of a separation enhancer as well [[3]](https://pubs-aip-org.proxy.library.vanderbilt.edu/aip/apl/article/93/20/203507/336137/Separation-enhancement-in-pinched-flow), to make the device more robust to outer disturbances.
 
 {% include gallery caption="Assorted related pictures from the syringe pump project." %}
 
