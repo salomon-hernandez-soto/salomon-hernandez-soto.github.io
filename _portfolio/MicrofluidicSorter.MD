@@ -113,7 +113,7 @@ As for the performance of the device, difficulty with casting the device caused 
 
 Embeded below is footage of fellow student Kathleen's device which makes use of enhanced PFF. Note how the enhancer segment pulls the large particles further down. This idea explored further could lead to more robust devices in the future that can operate with less precise testing conditions.
 
-{% include video id="SNkoAyCRjLI" provider="youtube" %}
+{% include video id="SAfPZsFUudo" provider="youtube" %}
 
 {% include gallery caption="Assorted related pictures from the microfluidic sorter project." %}
 
