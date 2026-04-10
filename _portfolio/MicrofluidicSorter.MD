@@ -1,5 +1,5 @@
 ---
-title: "Microfluidic Particle Sorter (W.I.P)"
+title: "Microfluidic Particle Sorter"
 excerpt: "This microfluidic particle sorter is capable of sorting ~150 micron from ~450 micron particles."
 header:
   image: /assets/img/PFF-Banner.JPEG
