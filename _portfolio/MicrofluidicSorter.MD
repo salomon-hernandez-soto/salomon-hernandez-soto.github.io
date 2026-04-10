@@ -5,15 +5,15 @@ header:
   image: /assets/img/PFF-Banner.JPEG
   teaser: /assets/img/PFF-Thumbnail.JPEG
 gallery:
-  - url: /assets/img/Syringe-Pump-1.png
-    image_path: /assets/img/Syringe-Pump-1.png
-    alt: "Labeled front view of syringe pump"
-  - url: /assets/img/Syringe-Pump-2.png
-    image_path: /assets/img/Syringe-Pump-2.png
-    alt: "Wiring diagram of the syringe pump"
-  - url: /assets/img/Syringe-Pump-3.png
-    image_path: /assets/img/Syringe-Pump-3.png
-    alt: "Syringe pump while calibrating flow rate"
+  - url: /assets/img/PFF-Mold.JPEG
+    image_path: /assets/img/PFF-Mold.JPEG
+    alt: "Mold used to cast the PFF device"
+  - url: /assets/img/PFF-Thumbnail.JPEG
+    image_path: /assets/img/PFF-Thumbnail.JPEG
+    alt: "Picture of my microfluidic sorter"
+  - url: /assets/img/PFF-Visualization.png
+    image_path: /assets/img/PFF-Visualization.png
+    alt: "Visualization of how PFF works and the major dimensions"
 ---
 
 ## Background
@@ -109,7 +109,11 @@ Resin printing was chosen for the manufacturing method of the mold. This is beca
 
 On a related note, to allow for more particles of different sizes, the device would likely have to be scaled up, and the outlet channel locations and lengths would have to be recalculated according to the earlier calculations. However, the methods detailed earlier make this process replicable, though the device may not be able to be kept symmetrical based on the expected particle sizes and number of size categories needed.
 
-As for the performance of the device, difficulty with casting the device caused the flat surface of the device to be tilted, distorting the resistance of the channels and the performance of the device. Additionally, a thin casted layer made it difficult to anchor the microfluidic barbs. Lastly, operator error caused the device to malfunction. Clearly, the major improvements lie with the testing of the devices, such as creating a stand for the particle-containing syringe pump, improving casting technique, and perhaps replacing flexible tubing with rigid tubing, to avoid disturbances. The device could have also been optimized for easier casting by increasing the height of the channels, or optimized for easier testing by increasing the width of the pinched and broad section to avoid clogging or collisions. However, these come with the drawbacks of space limitations on the glass slide and potentially damaging the laminar flow profile of the device. One interesting feature to explore would be the addition of a separation enhancer as well [[3]](https://pubs-aip-org.proxy.library.vanderbilt.edu/aip/apl/article/93/20/203507/336137/Separation-enhancement-in-pinched-flow), to make the device more robust to outer disturbances.
+As for the performance of the device, difficulty with casting the device caused the flat surface of the device to be tilted, distorting the resistance of the channels and the performance of the device. Additionally, a thin casted layer made it difficult to anchor the microfluidic barbs. Lastly, operator error caused the device to malfunction. Clearly, the major improvements lie with the testing of the devices, such as creating a stand for the particle-containing syringe pump, improving casting technique, and perhaps replacing flexible tubing with rigid tubing, to avoid disturbances. The device could have also been optimized for easier casting by increasing the height of the channels, or optimized for easier testing by increasing the width of the pinched and broad section to avoid clogging or collisions. However, these come with the drawbacks of space limitations on the glass slide and potentially worsening the laminar flow profile of the device. One interesting feature to explore would be the addition of a separation enhancer as well [[3]](https://pubs-aip-org.proxy.library.vanderbilt.edu/aip/apl/article/93/20/203507/336137/Separation-enhancement-in-pinched-flow), to make the device more robust to outer disturbances.
+
+Embeded below is footage of fellow student Kathleen's device which makes use of enhanced PFF. Note how the enhancer segment pulls the large particles further down. This idea explored further could lead to more robust devices in the future that can operate with less precise testing conditions.
+
+{% include video id="SNkoAyCRjLI" provider="youtube" %}
 
 {% include gallery caption="Assorted related pictures from the microfluidic sorter project." %}
 
