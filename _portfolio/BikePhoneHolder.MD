@@ -17,102 +17,45 @@ gallery:
 ---
 
 ## Background
-Sorting small particles is a popular and widely applicable challenge in microfluidics and medicine. This is because this simple function can lead to several powerful applications, such as separating cancer and blood cells for the study of circulating tumor cells (CTC's) [[1]](https://www.sciencedirect.com/science/article/pii/S0255270124004252#bib0131). There are several different methods for separating small particles, such as through filtering or through centrifugation. These methods, however, may be prone to clogging or may require active filtering. The method employed here is pinch flow fractionation, which runs passively, continuously, and with a lower chance for clogging than other techniques.
+This project was done mainly as an exercise in top-down modeling. In CAD, parts can either be created individually and brought together as an assembly, or they can be made in the context of an assembly in relation to other parts. The latter is called top-down modeling, and it is a powerful way to design models quickly. 
 
-<img src="/assets/img/PFF-Paper-Figure-1.jpg" alt="Visualization of PFF sorting two particles in a fluid flow" style="width:800px;"/>
-Figure 1 - Pinch flow fractionation visualization from the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r)
-
-Pinch flow fractionation works through taking advantage of the natural flow spread of fluid past a sharp exit. When fluid flows from a thin channel to a broad one, the streamlines in the flow spread out proprtional to the width ratio between the two channels. In PFF, a particle containing inlet stream and a high flow rate fluid stream are made to collide at an angle, pushing all the particles to the upper channel wall. Once the flow spreads out, the particles spread out into streamlines based on their center of mass. This results in smaller particles ending up above larger ones, since their center of mass is closer to the narrow channel's upper wall. In more rigorous terms, the final position of the particles can be predicted based on the particle diameter, the pinched channel width, and the broad channel width. Thus by splitting the resulting flow, small particles can be sorted into bins of a range of sizes.
-
-In practice, differences in flow resistance and flow rate, siphoning effects, presence of bubbles, and turbulent flow regions make this solution non-trivial to implement. This design then serves as a way to advance the efforts in implementing PFF in a simple manner, using as few outlet channels or active flow rate controls as possible.
-
-## Problem Statement
-Biomedical engineers need a better way to implement PFF, as current designs suffer from sensitive flow pattern controls and unreliable performance
+Top-down modeling was leveraged here as for a bike phone holder, there are many interlocking parts that have to fit together, from the detent mechanism used to rotate the phone, to the clamp that fits on the handlebars, and to the holding mechanism itself. Since top-down modeling creates parts in relation to each other, updating one part updates all the other parts that are affected by its geometry. This was critical for the bike phone holder design, as it consists of 10 parts which affect each other in many ways, such as for tool clearances or for proper part tolerancing.
 
 ## Functional Requirements
-* Must fit in a 50 x 75 mm wide microscope slide
-* Must sort 125 - 150 μm particles from 425 - 500 μm particles
-* Mold must be made through SLA methods for small feature sizes
-* Design must leverage PFF and not use filtering methods
-* Bubbles must be minimized
-* Aspect ratio must be <4:1 (height to width of features)
+* Must fit on 23 mm – 25 mm handlebars
+* Must be able to rotate phone between portrait and landscape orientations
+* Must clamp onto the phone securely
+* Must be created with top-down modeling
 
 ## CAD Model
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811109f64f9701b0d9d?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+(Insert cad model)
 
 ## Design
-<img src="/assets/img/PFF-Thumbnail.JPEG" alt="Picture of the finished casted PFF sorter part" style="width:800px;"/>
-Figure 2 - My design for a PFF device
+(Insert IRL picture of the printed model on handlebars)
+My design consists of two notable features, the detent mechanism and the clamping mechanism.
 
-My design was informed by a couple of factors. To begin, since there was only time for a single iteration, I decided to go for a more predictable design which can be modeled through simple equations. I also decided to keep the design symmetric, for a better chance of achieving parallel, non-distorted streamlines. Lastly, I tried to keep the internal volume of the channels as small as possible, to aid the device in achieving laminar flow. Based on these factors, I decided to go with a simple PFF device, based on the original 2004 paper [[2]](https://pubs.acs.org/doi/10.1021/ac049863r).
 
-For a simple PFF device, the location of the resulting particles can be predicted through the following equation...
+(Insert cross-section view of internal rotation mechanism)
+A detent mechanism is one that locks onto some number of positions. This is useful as it allows rotation onto specific angles, which is perfect for locking a phone into landscape or portrait orientations. Here, the detent was implemented through a circular hub holding a spring and a ball, fitted into an outer hub with ball indentations. As the hub rotates, the spring pushes the ball into the wall, which naturally stops at the ball indentations. It then locks until enough torque is applied for the ball to move inwards again. The force was found through printing a small testing mechanism with varying indentation depths and then feeling by hand which depth gave the best “sweet spot” between too little and too much holding strength.
 
-<img src="/assets/img/PFF-Visualization.png" alt="Visualization of major dimensions in a PFF device" style="width:800px;"/>
-Figure 3 - Major dimensions labeled on a PFF diagram
+(Insert pic of rack and pinion mechanism)
+The clamping mechanism works through a rack and pinion design. A rack and pinion is a gear system that translates rotation into linear motion. This was perfect for keeping the clamping hands symmetrical, such that when one clamp moves outwards, the other does as well. This looks aesthetically pleasing and distributes the weight of the phone evenly throughout the device. More info on gears can be found [here].
 
-$$ Y_0=(w_p-\frac{D}{2})\frac{w_b}{w_p} $$
+The gears were made with a module of 1.5 and a pressure angle of 25 degrees. Also, the gear is relatively large, having a 31.5 cm pitch diameter. These choices were made to get relatively large teeth, as 3D-printing tolerances can be quite loose, which ruins the involute teeth profile for small-tooth gears. The rack and pinion profiles were generated [here]. 
 
-where $$ Y_0 $$ is the particle's position on the y-axis relative to the bottom of the broad region, $$ D $$ is the diameter of the particle, $$ w_p $$ is the width of the pinched region, and $$ w_b $$ is the width of the broad region. This equations suggests the following:
+## Assembly and Use Instructions
+(Insert BOM)
 
-* Higher broad to pinched width ratio increases flow separation
-* Smaller particles end up at higher positions
-* The minimum pinched channel width is limited by the largest particle diameter
+To assemble the holder, start by placing heat set inserts inside all of the holes. There are two M5 inserts on the bottom clamp, four M3 inserts on the top clamp’s top face, two M3 inserts on the top of the circular hub, one M3 insert in the middle of the holder centerpiece, and one M3 insert on the back of both phone clamps.
 
-Taking these into consideration, the pinched width was made 600 μm and the broad width was made 30 mm. To see where the edge of the small and large particle bands are, you also have to add/subtract the radius of the particle, since a boundary hitting the middle of the particle would not create reliable splitting. From this, it was calcuated that the small particles will flow in a band between 26.18 - 26.94 mm, and the large ones within a band between 17.25 - 19.59 mm. So, to keep a symmetric profile, the regions were split at 8 mm and 22 mm, making the small particle and buffer outlet flows 8 mm wide, and the large particle outet flow 14 mm wide. Note also that the flow separation points are rounded, to reduce bubbles and promote laminar flow.
+First, assemble the clamp. Then, attach the circular hub to the top clamp. Next, squeeze the spring and ball into the rotating cylinder’s hole and squeeze it into the circular hub. Next, put the lid on top of the hub to stop the cylinder from coming out, and press the centerpiece into the hex head, making sure the phone orientation will be correct. Finally, install the gears, install the phone clamps in a symmetric fashion, and install the extension spring in the back, holding the ends with M3 screws and nuts. If you’ve done it right, the holder will be able to clamp onto a handlebar and rotate like this!
 
-To tackle the flow balancing problem, a strong attempt was made to keep the pressure differential for each outlet channel equal. The following derivation shows the equation used behind this method, taking into account the outlet channels are rectangular in shape. Note that outlet A is the small particle channel, outlet B is the large particle channel, and outlet C is the buffer channel. Outlets A and C share all geometry due to symmetry.
+(Insert IRL GIF of holder rotating)
+## Manufacturing Methods
+For the phone clamps, powder printing with Nylon 12 powder was used. Though they can be filament printed, the support material makes it very difficult to get a smooth fit for the rack, and since the rack is effectively a thin cantilever beam, it benefits a lot from the strong mechanical properties of Nylon 12 powder.
 
-$$ \Delta P_{A/C} = \Delta P_B $$
+For all other parts, filament printing with PLA was used, with 4 perimeter walls on the centerpiece due to the thin phone ledge. The whole assembly was optimized for minimal support material, so filament printing offered the quickest and easiest prototyping. Theoretically, other technologies could be used, but resin printing was not an option for any parts with heat set inserts, as resin printing uses thermoset polymers.
 
-$$ \Rightarrow R_{A/C}Q_{A/C} = R_BQ_B $$
-
-$$ \Rightarrow R_{A/C} \frac{Q_{A/C}}{Q_B} = R_B $$
-
-Now relating the geometry of the outlets to the flow rate...
-
-$$ \frac{Q_{A/C}}{8mm} = \frac{Q_B}{14mm} $$
-
-$$ \Rightarrow \frac{Q_{A/C}}{Q_B} = \frac{8}{14} $$
-
-$$ \Rightarrow \frac{8}{14}R_{A/C} = R_B $$
-
-Plugging back to the original equation..
-
-$$ \Rightarrow \frac{8}{14}R_{A/C} = R_B $$
-
-$$ \Rightarrow \frac{8}{14} (\frac{1}{1-0.63\frac{h_{A/C}}{w_{A/C}}} \frac{12 \mu_{A/C} l_{A/C}}{h_{A/C}^3 w_{A/C}}) = \frac{1}{1-0.63\frac{h_B}{w_B}} \frac{12 \mu_B l_B}{h_B^3 w_B} $$
-
-And finally since the fluid viscosity is constant for both outlets, and if we keep the width and height of each outlet channel the same this simplifies to...
-
-$$ l_{A/C} = \frac{14}{8}l_B $$
-
-Some additional considerations are maintaining laminar flow, which is made easier with a smaller width and height, and reducing the resistance contribution of the sloped gradient region and the external outlet tubing, which is done by increasing the resistance of the straight rectangular outlet channels. From this, the outlet channel width was made 1.4 mm, the outlet channel height was made 0.7 mm, the outlet B length was made 19 mm, and the outlet A and C lengths were made 33.25 mm.
-
-Overall, the design choices were made to be conducive for parallel streamlines and ideal flow.
-
-## Instructions
-The creation of the microfluidic device was quite simple, but was done carefully to avoid any defects. The inside of the mold was never touched to avoid affecting the roughness of the casted part.
-
-<img src="/assets/img/PFF-Mold.JPEG" alt="Clear resin-printed mold used to cast the microfluidic device" style="width:800px;"/>
-Figure 4 - Mold used to cast the particle sorter body
-
-Fistly, the mold was printed out of FormLabs' Clear Resin v5, for easy visibility of design features. A layer height resolution of 0.05 mm was used to ensure all height dimensions were kept accurate. The mold was cleaned for 5 minutes while attached to the buildplate, and 5 miniutes while off the buildplate, keeping this time short to avoid IPA absorption. The mold was dried at an incline for 45 minutes to allow IPA to dry and drip out. The mold was then blown with compressed air to dislodge debris. Lastly, the mold was cured at room temp for 1 minute only, to ensure no warping occurs.
-
-<img src="/assets/img/Plasma-Treating-Image.jpg" alt="Plasma treating of the PDMS mold and a glass slide" style="width:800px;"/>
-Figure 5 - Plasma treating of the mold
-
-This mold was then casted out of PDMS and treated so that it could bond with a glass slide.
-
-## Discussion
-Resin printing was chosen for the manufacturing method of the mold. This is because resin printing allows for quick printing of fine detail parts. On this note however, resin printing does have a resolution limit. For example, the smallest layer height that can be made is 25 microns, and the XY resolution for a Form 4 printer is 50 microns. On top of fabrication challenges with casting tiny features, this puts a limit on how small of a particle the device can sort, since for larger flow separation you need either a very narrow pinched channel or a very wide broad channel.
-
-On a related note, to allow for more particles of different sizes, the device would likely have to be scaled up, and the outlet channel locations and lengths would have to be recalculated according to the earlier calculations. However, the methods detailed earlier make this process replicable, though the device may not be able to be kept symmetrical based on the expected particle sizes and number of size categories needed.
-
-As for the performance of the device, difficulty with casting the device caused the flat surface of the device to be tilted, distorting the resistance of the channels and the performance of the device. Additionally, a thin casted layer made it difficult to anchor the microfluidic barbs. Lastly, operator error caused the device to malfunction. Clearly, the major improvements lie with the testing of the devices, such as creating a stand for the particle-containing syringe pump, improving casting technique, and perhaps replacing flexible tubing with rigid tubing, to avoid disturbances. The device could have also been optimized for easier casting by increasing the height of the channels, or optimized for easier testing by increasing the width of the pinched and broad section to avoid clogging or collisions. However, these come with the drawbacks of space limitations on the glass slide and potentially worsening the laminar flow profile of the device. One interesting feature to explore would be the addition of a separation enhancer as well [[3]](https://pubs-aip-org.proxy.library.vanderbilt.edu/aip/apl/article/93/20/203507/336137/Separation-enhancement-in-pinched-flow), to make the device more robust to outer disturbances.
-
-Embeded below is footage of fellow student Kathleen's device which makes use of enhanced PFF. Note how the enhancer segment pulls the large particles further down. This idea explored further could lead to more robust devices in the future that can operate with less precise testing conditions.
-
-{% include video id="SAfPZsFUudo" provider="youtube" %}
+(Pics of individual components and CAD render of holder + phone in the gallery)
 
 {% include gallery caption="Assorted related pictures from the bike phone holder project." %}
