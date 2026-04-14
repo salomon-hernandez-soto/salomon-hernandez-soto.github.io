@@ -8,12 +8,18 @@ gallery:
   - url: /assets/img/Holder-Renders.png
     image_path: /assets/img/Holder-Renders.png
     alt: "CAD Renders of the bike phone holder in use"
-  - url: /assets/img/PFF-Thumbnail.JPEG
-    image_path: /assets/img/PFF-Thumbnail.JPEG
-    alt: "Picture of my microfluidic sorter"
-  - url: /assets/img/PFF-Visualization.png
-    image_path: /assets/img/PFF-Visualization.png
-    alt: "Visualization of how PFF works and the major dimensions"
+  - url: /assets/img/Holder-Bottom-Clamp.png
+    image_path: /assets/img/Holder-Bottom-Clamp.png
+    alt: "CAD render of the bottom clamp"
+  - url: /assets/img/Holder-Top-Clamp.png
+    image_path: /assets/img/Holder-Top-Clamp.png
+    alt: "CAD render of the top clamp"
+  - url: /assets/img/Holder-Circular-Hub.png
+    image_path: /assets/img/Holder-Circular-Hub.png
+    alt: "CAD render of the circular hub"
+  - url: /assets/img/Holder-Rotating-Base.png
+    image_path: /assets/img/Holder-Rotating-Base.png
+    alt: "CAD render of the rotating base"
 ---
 
 ## Background
