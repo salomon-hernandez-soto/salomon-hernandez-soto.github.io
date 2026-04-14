@@ -41,19 +41,31 @@ Figure 2 - Cross-sectional views of the detent mechanism
 
 A detent mechanism is one that locks onto some number of positions. This is useful as it allows rotation onto specific angles, which is perfect for locking a phone into landscape or portrait orientations. Here, the detent was implemented through a circular hub holding a spring and a ball, fitted into an outer hub with ball indentations. As the hub rotates, the spring pushes the ball into the wall, which naturally stops at the ball indentations. It then locks until enough torque is applied for the ball to move inwards again. The force was found through printing a small testing mechanism with varying indentation depths and then feeling by hand which depth gave the best “sweet spot” between too little and too much holding strength.
 
-(Insert pic of rack and pinion mechanism)
+<img src="/assets/img/Holder-Rack-and-Pinion.png" alt="View of the rack and pinion phone clamp design" style="width:800px;"/>
 Figure 3 - Rack and pinion mechanism used in the holder
 
-The clamping mechanism works through a rack and pinion design. A rack and pinion is a gear system that translates rotation into linear motion. This was perfect for keeping the clamping hands symmetrical, such that when one clamp moves outwards, the other does as well. This looks aesthetically pleasing and distributes the weight of the phone evenly throughout the device. More info on gears can be found [here].
+The clamping mechanism works through a rack and pinion design. A rack and pinion is a gear system that translates rotation into linear motion. This was perfect for keeping the clamping hands symmetrical, such that when one clamp moves outwards, the other does as well. This looks aesthetically pleasing and distributes the weight of the phone evenly throughout the device. More info on gears can be found [here](https://www.ptsmake.com/the-practical-ultimate-guide-to-driving-gear-design/).
 
-The gears were made with a module of 1.5 and a pressure angle of 25 degrees. Also, the gear is relatively large, having a 31.5 cm pitch diameter. These choices were made to get relatively large teeth, as 3D-printing tolerances can be quite loose, which ruins the involute teeth profile for small-tooth gears. The rack and pinion profiles were generated [here]. 
+The gears were made with a module of 1.5 and a pressure angle of 25 degrees. Also, the gear is relatively large, having a 31.5 cm pitch diameter. These choices were made to get relatively large teeth, as 3D-printing tolerances can be quite loose, which ruins the involute teeth profile for small-tooth gears. The rack and pinion profiles were generated [here](https://www.stlgears.com/generators/lasercut).
 
 ## Assembly and Use Instructions
-(Insert BOM)
+Table I - Bill of Materials (Off-the-Shelf Parts)
+
+| **Part**                     | **Count** |
+|------------------------------|:---------:|
+| M3x3.4 Heat Set Insert       |     9     |
+| M5x5.7 Heat Set Insert       |     2     |
+| M3x8 Screw                   |     7     |
+| M3x10 Screw                  |     2     |
+| M5x16 Screw                  |     2     |
+| M3x2 Hex Nut                 |     4     |
+| 0.65x6.5x64 Extension Spring |     1     |
+| 8x15 Compression Spring      |     1     |
+| 8mm Steel Ball               |     1     |
 
 To assemble the holder, start by placing heat set inserts inside all of the holes. There are two M5 inserts on the bottom clamp, four M3 inserts on the top clamp’s top face, two M3 inserts on the top of the circular hub, one M3 insert in the middle of the holder centerpiece, and one M3 insert on the back of both phone clamps.
 
-First, assemble the clamp. Then, attach the circular hub to the top clamp. Next, squeeze the spring and ball into the rotating cylinder’s hole and squeeze it into the circular hub. Next, put the lid on top of the hub to stop the cylinder from coming out, and press the centerpiece into the hex head, making sure the phone orientation will be correct. Finally, install the gears, install the phone clamps in a symmetric fashion, and install the extension spring in the back, holding the ends with M3 screws and nuts. If you’ve done it right, the holder will be able to clamp onto a handlebar and rotate like this!
+First, assemble the clamp. Then, attach the circular hub to the top clamp. Next, squeeze the spring and ball into the rotating base’s hole and squeeze it into the circular hub. Next, put the lid on top of the hub to stop the base from coming out, and press the centerpiece into the hex head, making sure the phone orientation is correct and aligned. Finally, install the gears, install the phone clamps in a symmetric fashion, and install the extension spring in the back, holding the ends with M3 screws and nuts. If you’ve done it right, the holder will be able to clamp onto a handlebar and rotate like this!
 
 <img src="/assets/img/Holder-Rotation.gif" alt="GIF of the holder going through all 8 rotation positions, including landscape and portrait" style="width:800px;"/>
 Figure 4 - All 8 rotation positions of the bike phone holder
