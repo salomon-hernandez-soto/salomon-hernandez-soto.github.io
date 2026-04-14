@@ -20,6 +20,15 @@ gallery:
   - url: /assets/img/Holder-Rotating-Base.png
     image_path: /assets/img/Holder-Rotating-Base.png
     alt: "CAD render of the rotating base"
+  - url: /assets/img/Holder-Centerpiece.png
+    image_path: /assets/img/Holder-Centerpiece.png
+    alt: "CAD render of the phone clamp centerpiece"
+  - url: /assets/img/Holder-Gear.png
+    image_path: /assets/img/Holder-Gear.png
+    alt: "CAD render of the gear in the rack and pinion mechanism"
+  - url: /assets/img/Holder-Phone-Clamp.png
+    image_path: /assets/img/Holder-Phone-Clamp.png
+    alt: "CAD render of the phone clamp and rack"
 ---
 
 ## Background
@@ -80,7 +89,5 @@ Figure 4 - All 8 rotation positions of the bike phone holder
 For the phone clamps, powder printing with Nylon 12 powder was used. Though they can be filament printed, the support material makes it very difficult to get a smooth fit for the rack, and since the rack is effectively a thin cantilever beam, it benefits a lot from the strong mechanical properties of Nylon 12 powder.
 
 For all other parts, filament printing with PLA was used, with 4 perimeter walls on the centerpiece due to the thin phone ledge. The whole assembly was optimized for minimal support material, so filament printing offered the quickest and easiest prototyping. Theoretically, other technologies could be used, but resin printing was not an option for any parts with heat set inserts, as resin printing uses thermoset polymers.
-
-(Pics of individual components and CAD render of holder + phone in the gallery)
 
 {% include gallery caption="Assorted related pictures from the bike phone holder project." %}
