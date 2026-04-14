@@ -1,5 +1,5 @@
 ---
-title: "Bike Phone Holder (W.I.P)"
+title: "Bike Phone Holder"
 excerpt: "This bike phone holder can hold a phone in landscape or portrait orientation."
 header:
   image: /assets/img/Holder-Banner.JPEG
