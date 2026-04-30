@@ -64,7 +64,7 @@ Table 1 – Vertical Turning Loads
 | Motor Weight Moment           |     Moment    |        Motor Mount        |    0.37 N*m   |
 
 A justification for all loads…
-* Left/Right Axle Bearing Loads – Assuming the rear wheels are carrying 75% of the total weight (b = 0.75 in Figure X), with both wheels sharing an equal load. Assume the four axles collectively support ~85.1 kg. Then…
+* Left/Right Vertical Axle Load – Assuming the rear wheels are carrying 75% of the total weight (b = 0.75 in Figure 2), with both wheels sharing an equal load. Assume the four axles collectively support ~85.1 kg. Then…
 
 $$ N_{axle} = \frac{1}{2}bN = \frac{1}{2}0.75W_{sys} = \frac{3}{8}m_{sys}g $$
 
@@ -91,23 +91,23 @@ Table 2 – Lateral Turning Loads
 |---------------------------------|:-------------:|:-------------------------:|:-------------:|
 | Single-Sided Vertical Axle Load |    Bearing    | Ball Bearing Contact Area |     626 N     |
 | Lateral Axle Load               |     Force     |        Motor Mount        |     210 N     |
-| Motor Weight Moment             |     Moment    |        Motor Mount        |    0.37 N*m   |
-| Centripetal Acceleration        |    Inertial   |            N/A            |   9.81 m/s^2  |	
+| Motor Sideways Reaction Load    |     Force     |        Motor Mount        |      20 N     |
+| Centripetal Acceleration        |    Inertial   |            N/A            |   9.81 m/s^2  |
 
 A justification for all loads…
-* Single-sided Axle Bearing Load – Assuming one side of the board carries all the weight due to the leaning of the rider…
+* Single-sided Vertical Axle Load – Assuming one side of the board carries all the weight due to the leaning of the rider…
 
 $$ N_{axle} = 2(313\text{ }N)=626\text{ }N $$
 
-* Lateral load on the axles – Assume a maximum centripetal acceleration of 1 g, with each of the four axles equally distributing this load…
+* Lateral Axle Load – Assume a maximum centripetal acceleration of 1 g, with each of the four axles equally distributing this load…
 
 $$ F_{lat} = \frac{1}{4}m_{sys}a_{c} = \frac{1}{4}(85.1\text{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 210\text{ }N $$
 
-* Lateral inertial load on the motor mount – Apply that same 1 g of centripetal acceleration, with the 2 kg of assumed load on the motor mount. Note the direction is flipped since the motor will want to stay in place…
+* Motor Sideways Reaction Load – Apply that same 1 g of centripetal acceleration, with the 2 kg of assumed load on the motor mount. Note the direction is flipped since the motor will want to stay in place…
 
 $$ F_{motor,inertial} = (m_{motor} + m_{pulley})a_{c} = (2\text{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 20\text{ }N $$
 
-* Global Linear Load to the side – Accounts for the inertial load of the truck with 1 g of acceleration to the side.
+* Centripetal Acceleration – Accounts for the inertial load of the truck with 1 g of acceleration to the side.
 
 #  Acceleration/Braking Loading
 <img src="/assets/img/Truck-Acceleration-FBD.png" alt="Free body diagram for acceleration forces on a skateboard" style="width:800px;"/>
@@ -155,7 +155,7 @@ Table 4 – Vertical Impact Loads
 |---------------------------|:-------------:|:-------------------------:|:-------------:|
 | Single-Sided Impact Force |    Bearing    | Ball Bearing Contact Area |     2090 N    |
 | Motor Impact Force        |     Force     |        Motor Mount        |      60 N     |
-| Motor Impact Moment       |     Moment    |            N/A            |    1.11 N*m   |
+| Motor Impact Moment       |     Moment    |        Motor Mount        |    1.11 N*m   |
 
 A justification for all loads…
 * Motor Impact Force – Assuming 3x the standard vertical force during an impact…
@@ -170,7 +170,7 @@ $$ M_{motor,impact} = 3(0.37\text{ }N\cdot m) = 1.11\text{ }N\cdot m $$
 
 $$ F_{impact} = 2.5(626\text{ }N) \simeq 2090\text{ }N $$
 
-Note that head-on impacts were not considered, as it is assumed the rear truck won’t be subjected to head-on impacts compared to the front truck, front wheels, and the deck. Also note inertial loading wasn't considered for impacts since the instantaneous acceleration in an impact is large, short, and unpredictable.
+Note that head-on impacts were not considered, as it is assumed the rear truck won’t be subjected to head-on impacts compared to the front truck, front wheels, and the deck. Also note inertial loading wasn't considered for impacts since the instantaneous acceleration in an impact is large, short-lived, and unpredictable.
 
 ## Aluminum and Steel Outcome Comparison
 From the CAD models, it is obvious that the aluminum solution is a lot bulkier than the steel solution. This points out an important fact about generative design, which is that sometimes the most effective solution is just adding more material rather than creating nice organic shapes. This suggests that ALSi10Mg is not an appropriate material to use, since it isn’t strong enough on its own and would need steel reinforcement. The 17-4 PH stainless steel outcome was thus chosen due to the material’s higher strength and rigidity, at the cost of higher density.
