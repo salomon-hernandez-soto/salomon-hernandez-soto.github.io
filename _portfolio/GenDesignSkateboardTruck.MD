@@ -34,24 +34,26 @@ One difficulty with generative design is the shapes it generates are often curve
 
 ## CAD Models
 Stainless steel solution (used):
-(insert embed link)
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811fdc766b7f6288839?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 Aluminum solution (unused):
-(insert embed link)
+
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028110014d9ce83ca5ad9?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Load Cases
 Generative design relies on having as many accurate load cases as possible. This is because the generated design will be the minimum possible solution for a given set of loading scenarios. If the solver is given less load cases than expected, then the generated design may not be suitable for any major load cases beyond the ones considered during the study. Additionally, if the applied loads are too low, the design may be unsafe, but if the loading is too conservative, you may eat away at the weight savings that generative design can provide. The following subsections show the load cases that were considered in the study, trying to strike a balance between strength and optimization.
 
 As an aside, even though Fusion360 solves generative design problems as static loading scenarios, the skateboard is moving through space. Luckily, dynamics problems can be converted into equivalent static ones by rearranging Newton’s 2nd law as…
 
-$$ \sum_{}^{} \overrightarrow{F} = m \overrightarrow{a} \Rightarrow \sum_{}^{} \overrightarrow{F} - m \overrightarrow{a} = 0 $$
+$$ \sum_{}^{}F = ma \Rightarrow \sum_{}^{}F - ma = 0 $$
 
 Where the ma term is treated as another force called an “inertial load.” Here, this term is small as the mass of the truck is much smaller than the mass of a person. However, Fusion includes a convenient tool for inertial loading, so it was considered.
 
 # Vertical Loading
 <img src="/assets/img/Truck-Vertical-FBD.png" alt="Free body diagram for vertical forces on a skateboard" style="width:800px;"/>
 
-Figure 2 – Free body diagram of a person on a skateboard at constant velocity (whole system [A] and isolated truck system [B])
+Figure 2 – Free body diagram of a person on a skateboard at constant velocity for the whole system (A) and isolated truck system (B)
 
 Table 1 – Vertical Turning Loads
 | **Load Name**                 | **Load Type** |     **Load Location**     | **Magnitude** |
@@ -80,7 +82,7 @@ $$ \Rightarrow (0.98\text{ }kg)(9.81\text{ }\frac{m}{s^2})(0.037\text{ }m) \sime
 # Lateral Loading
 <img src="/assets/img/Truck-Lateral-FBD.png" alt="Free body diagram for lateral forces on a skateboard" style="width:800px;"/>
 
-Figure 3 – Free body diagram of a person on a skateboard turning in a circular arc (whole system [A] and isolated truck system [B])
+Figure 3 – Free body diagram of a person on a skateboard turning in a circular arc for the whole system (A) and isolated truck system (B)
 
 Table 2 – Lateral Turning Loads
 | **Load Name**                   | **Load Type** |     **Load Location**     | **Magnitude** |
@@ -108,7 +110,7 @@ $$ F_{motor,inertial} = (m_{motor} + m_{pulley})a_{c} = (2\text{ }kg)(9.81\text{
 #  Acceleration/Braking Loading
 <img src="/assets/img/Truck-Acceleration-FBD.png" alt="Free body diagram for acceleration forces on a skateboard" style="width:800px;"/>
 
-Figure 4 – Free body diagram of a person on a skateboard speeding up (whole system [A] and isolated truck system [B])
+Figure 4 – Free body diagram of a person on a skateboard speeding up for the whole system (A) and isolated truck system (B)
 
 Table 3 – Acceleration/Braking Loads
 | **Load Name**                     | **Load Type** |     **Load Location**     | **Magnitude** |
@@ -142,7 +144,7 @@ Note the forward pointing loads are simply reversed in direction for the braking
 # Vertical Impact Loading
 <img src="/assets/img/Truck-Impact-FBD.png" alt="Free body diagram for vertical impact forces on a skateboard" style="width:800px;"/>
 
-Figure 5 – Free body diagram of a person on a skateboard landing (whole system [A] and isolated truck system [B])
+Figure 5 – Free body diagram of a person on a skateboard landing for the whole system (A) and isolated truck system (B)
 
 Table 4 – Vertical Impact Loads
 | **Load Name**             | **Load Type** |     **Load Location**     | **Magnitude** |
@@ -189,4 +191,4 @@ The design itself has a truss-like shape with thin members (Figure 8). This is l
 ## About Generative Design
 Generative design is quite an interesting innovation as far as design modeling software goes. As its improved, it has gained the ability to design for different manufacturing techniques, with a wide range of materials and loading scenarios. However, its main limitation is with how different a design mindset it requires. Using generative design to its fullest potential not only requires excellent knowledge on the major load cases affecting a part but also requires sharp thinking about the positive and negative space in a design. Areas that a designer may intuitively avoid aren’t avoided by the solver unless you tell it to avoid it. This becomes even more challenging when the negative space can’t be represented by a simple static object. Some examples of this in the skateboard design are the clearance needed to install the truck onto the kingpin, the clearance needed to turn the truck, or the clearance needed to avoid the first bushing while sliding the truck onto the kingpin and pivot. Overall, generative design can be overkill for simple applications given the large time investment in setting up load cases, finding positive and negative space, and generating solutions. Generative design seems best suited for high performance, low part count applications, such as making a one-off heat exchanger or fluid mixer for a supercar out of powder printed metal.
 
-{% include gallery caption="Assorted related pictures from the microfluidic sorter project." %}
+{% include gallery caption="Assorted related pictures from the generative design skateboard truck project." %}
