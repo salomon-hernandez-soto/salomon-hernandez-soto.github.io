@@ -35,11 +35,11 @@ One difficulty with generative design is the shapes it generates are often curve
 ## CAD Models
 Stainless steel solution (used):
 
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811fdc766b7f6288839?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811fdc766b7f6288839?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 Aluminum solution (unused):
 
-<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028110014d9ce83ca5ad9?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+<iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b6028110014d9ce83ca5ad9?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Load Cases
 Generative design relies on having as many accurate load cases as possible. This is because the generated design will be the minimum possible solution for a given set of loading scenarios. If the solver is given less load cases than expected, then the generated design may not be suitable for any major load cases beyond the ones considered during the study. Additionally, if the applied loads are too low, the design may be unsafe, but if the loading is too conservative, you may eat away at the weight savings that generative design can provide. The following subsections show the load cases that were considered in the study, trying to strike a balance between strength and optimization.
