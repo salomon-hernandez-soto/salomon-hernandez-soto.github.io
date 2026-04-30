@@ -2,7 +2,7 @@
 title: "Generative Design Skateboard Truck"
 excerpt: "This design combines a skateboard truck and motor mount as one assembly, weighing 332.5 g."
 header:
-  image: /assets/img/Truck-Thumbnail.JPEG
+  image: /assets/img/Truck-Banner.JPEG
   teaser: /assets/img/Truck-Thumbnail.JPEG
 gallery:
   - url: /assets/img/Truck-Render.png
