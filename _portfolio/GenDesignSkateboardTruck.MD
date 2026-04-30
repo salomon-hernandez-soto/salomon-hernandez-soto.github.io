@@ -22,7 +22,7 @@ This project was done mainly as an exercise in generative design. Generative des
 (Insert pic of skateboard truck on longboard)
 Figure 1 – Example of a generative design outcome, which is also the final design for the skateboard truck
  
-One difficulty with generative design is the shapes it generates are often curved, organic shapes, which make them difficult to manufacture with traditional methods. Additive methods like powder bed fusion, however, can make these complex structures more easily, making generative design and SLS printing a powerful combination. Generative design can be used to make optimal structures, but it can also be used to combine individual assembly components into a single part. One example of this is Japan DENSO, who have created optimized ECU enclosures which balance heat-dissipation and lightweighting [[1]]( https://www.autodesk.com/design-make/articles/engine-control).
+One difficulty with generative design is the shapes it generates are often curved, organic shapes, which make them difficult to manufacture with traditional methods. Additive methods like powder bed fusion, however, can make these complex structures more easily, making generative design and SLS printing a powerful combination. Generative design can be used to make optimal structures, but it can also be used to combine individual assembly components into a single part. One example of this is Japan DENSO, who have created optimized ECU enclosures which balance heat-dissipation and lightweighting [[1]](https://www.autodesk.com/design-make/articles/engine-control).
 
 ## Functional Requirements
 * No constraints must be put on the axle ends or motor mount area, to allow these areas to deform to loads
@@ -42,7 +42,9 @@ Aluminum solution (unused):
 Generative design relies on having as many accurate load cases as possible. This is because the generated design will be the minimum possible solution for a given set of loading scenarios. If the solver is given less load cases than expected, then the generated design may not be suitable for any major load cases beyond the ones considered during the study. Additionally, if the applied loads are too low, the design may be unsafe, but if the loading is too conservative, you may eat away at the weight savings that generative design can provide. The following subsections show the load cases that were considered in the study, trying to strike a balance between strength and optimization.
 
 As an aside, even though Fusion360 solves generative design problems as static loading scenarios, the skateboard is moving through space. Luckily, dynamics problems can be converted into equivalent static ones by rearranging Newton’s 2nd law as…
+
 $$ \sum_{}^{} \overrightarrow{F} = m \overrightarrow{a} \Rightarrow \sum_{}^{} \overrightarrow{F} - m \overrightarrow{a} = 0 $$
+
 Where the ma term is treated as another force called an “inertial load.” Here, this term is small as the mass of the truck is much smaller than the mass of a person. However, Fusion includes a convenient tool for inertial loading, so it was considered.
 
 # Vertical Loading
@@ -58,14 +60,19 @@ Table 1 – Vertical Turning Loads
 
 A justification for all loads…
 * Left/Right Axle Bearing Loads – Assuming the rear wheels are carrying 75% of the total weight (b = 0.75 in Figure X), with both wheels sharing an equal load. Assume the four axles collectively support ~85.1 kg. Then…
+
 $$ N_{axle} = \frac{1}{2}bN = \frac{1}{2}0.75W_{sys} = \frac{3}{8}m_{sys}g $$
+
 $$ \Rightarrow \frac{3}{8}(85.1\text{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 313\text{ }N $$
 
 * Motor Mount Vertical Load – Combine the complete motor/belt/pulley system as being supported by the motor mount for simplicity. Thus, assume the motor mount supports ~2 kg (0.98 kg from the motor, 1.02 for everything else). Then…
+
 $$ W_{motor} = (m_{motor} + m_{pulley})g = (2\textbf{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 20\text{ }N $$
 
 * Motor Weight Moment – Given a Flipsky 6374 motor weighs 0.98 kg, with its center of mass ~37 mm from the motor mount, this creates a moment on the mount of about…
+
 $$ M_{motor} = F_{motor}r = m_{motor}gr $$
+
 $$ \Rightarrow (0.98\text{ }kg)(9.81\text{ }\frac{m}{s^2})(0.037\text{ }m) \simeq 0.37\text{ }N\cdot m $$
 
 # Lateral Loading
@@ -82,12 +89,15 @@ Table 2 – Lateral Turning Loads
 
 A justification for all loads…
 * Single-sided Axle Bearing Load – Assuming one side of the board carries all the weight due to the leaning of the rider…
+
 $$ N_{axle} = 2(313\text{ }N)=626\text{ }N $$
 
 * Lateral load on the axles – Assume a maximum centripetal acceleration of 1 g, with each of the four axles equally distributing this load…
+
 $$ F_{lat} = \frac{1}{4}m_{sys}a_{c} = \frac{1}{4}(85.1\text{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 210\text{ }N $$
 
 * Lateral inertial load on the motor mount – Apply that same 1 g of centripetal acceleration, with the 2 kg of assumed load on the motor mount. Note the direction is flipped since the motor will want to stay in place…
+
 $$ F_{motor,inertial} = (m_{motor} + m_{pulley})a_{c} = (2\text{ }kg)(9.81\text{ }\frac{m}{s^2}) \simeq 20\text{ }N $$
 
 * Global Linear Load to the side – Accounts for the inertial load of the truck with 1 g of acceleration to the side.
@@ -102,11 +112,17 @@ A justification for all loads…
 * Motor torque on the mount – A Flipsky 6374 motor has a max torque of 8 N*m. This is resisted by the motor mount since it does not twist during acceleration.
 
 * Axle acceleration loads – Using the max torque rating of 8 N*m, the gear ratio of 2:1 (torque increasing), the wheel radius of 45 mm, the system mass of ~85.1kg, and assuming the back axles take all the acceleration loading…
+
 $$ F_{accel} = \frac{1}{2}\frac{T_{wheel}}{r} = \frac{1}{2}\frac{2T_{motor}}{r} = \frac{T_{motor}}{r} $$
+
 $$ \Rightarrow \frac{8\text{ }N\cdot m}{0.035\text{ }m} \simeq 180\text{ }N $$
+
 * Motor acceleration reaction load – Applying the acceleration to the motor mount, which is assumed to be carrying about 2 kg…
+
 $$ F_{motor,inertial} = (m_{motor} + m_{pulley})a_{sys} $$
+
 $$ \Rightarrow a_{sys} = \frac{F_{traction}}{m_{sys}} = \frac{2F_{accel}}{m_{sys}} = \frac{2(180\text{ }N)}{85.1\textbf{ }kg} \simeq 4.20\text{ }\frac{m}{s^2} $$
+
 $$ \Rightarrow F_{motor,inertial} = (2\text{ }kg)(4.20\text{ }\frac{m}{s^2}) \simeq 8.40\text{ }N $$
 
 * Global Linear Load forwards/backwards – Accounts for the inertial load of the truck with 0.43g (4.2 m/s^2) of acceleration forwards/backwards, based on acceleration or braking.
@@ -119,12 +135,15 @@ Table 4 – Vertical Impact Loads
 
 A justification for all loads…
 * Motor Impact Force – Assuming 3x the standard vertical force during an impact…
+
 $$ F_{motor,impact} = 3(20\text{ }N) = 60\text{ }N $$
 
 * Motor Impact Moment – Assuming 3x the standard moment at the motor mount from the motor’s weight during an impact...
+
 $$ M_{motor,impact} = 3(0.37\text{ }N\cdot m) = 1.11\text{ }N\cdot m $$
 
 * Left/Right Axle Impact Force – Assuming 2.5x the standard vertical axle force concentrated on a single wheel (since the wheels soften the impact on the axles)…
+
 $$ F_{impact} = 2.5(626\text{ }N) \simeq 2090\text{ }N $$
 
 
