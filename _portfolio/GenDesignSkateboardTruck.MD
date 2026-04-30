@@ -5,15 +5,15 @@ header:
   image: /assets/img/PFF-Banner.JPEG
   teaser: /assets/img/PFF-Thumbnail.JPEG
 gallery:
-  - url: /assets/img/PFF-Mold.JPEG
-    image_path: /assets/img/PFF-Mold.JPEG
-    alt: "Mold used to cast the PFF device"
-  - url: /assets/img/PFF-Thumbnail.JPEG
-    image_path: /assets/img/PFF-Thumbnail.JPEG
-    alt: "Picture of my microfluidic sorter"
-  - url: /assets/img/PFF-Visualization.png
-    image_path: /assets/img/PFF-Visualization.png
-    alt: "Visualization of how PFF works and the major dimensions"
+  - url: /assets/img/Truck-Render.png
+    image_path: /assets/img/Truck-Render.png
+    alt: "Render of the skateboard truck with wheels, motor, and pulley"
+  - url: /assets/img/Truck-Generative-Design-Workspace.png
+    image_path: /assets/img/Truck-Generative-Design-Workspace.png
+    alt: "Picture of the generative design workspace used to generate the design"
+  - url: /assets/img/Truck-Spreadsheet.png
+    image_path: /assets/img/Truck-Spreadsheet.png
+    alt: "The spreadsheet used to quickly iterate through and calculate load combinations"
 ---
 
 ## Background
@@ -56,6 +56,7 @@ Where the ma term is treated as another force called an “inertial load.” Her
 Figure 2 – Free body diagram of a person on a skateboard at constant velocity for the whole system (A) and isolated truck system (B)
 
 Table 1 – Vertical Turning Loads
+
 | **Load Name**                 | **Load Type** |     **Load Location**     | **Magnitude** |
 |-------------------------------|:-------------:|:-------------------------:|:-------------:|
 | Left/Right Vertical Axle Load |    Bearing    | Ball Bearing Contact Area |     313 N     |
@@ -85,6 +86,7 @@ $$ \Rightarrow (0.98\text{ }kg)(9.81\text{ }\frac{m}{s^2})(0.037\text{ }m) \sime
 Figure 3 – Free body diagram of a person on a skateboard turning in a circular arc for the whole system (A) and isolated truck system (B)
 
 Table 2 – Lateral Turning Loads
+
 | **Load Name**                   | **Load Type** |     **Load Location**     | **Magnitude** |
 |---------------------------------|:-------------:|:-------------------------:|:-------------:|
 | Single-Sided Vertical Axle Load |    Bearing    | Ball Bearing Contact Area |     626 N     |
@@ -113,6 +115,7 @@ $$ F_{motor,inertial} = (m_{motor} + m_{pulley})a_{c} = (2\text{ }kg)(9.81\text{
 Figure 4 – Free body diagram of a person on a skateboard speeding up for the whole system (A) and isolated truck system (B)
 
 Table 3 – Acceleration/Braking Loads
+
 | **Load Name**                     | **Load Type** |     **Load Location**     | **Magnitude** |
 |-----------------------------------|:-------------:|:-------------------------:|:-------------:|
 | Motor Mount Torque                |     Moment    |        Motor Mount        |     8 N*m     |
@@ -147,6 +150,7 @@ Note the forward pointing loads are simply reversed in direction for the braking
 Figure 5 – Free body diagram of a person on a skateboard landing for the whole system (A) and isolated truck system (B)
 
 Table 4 – Vertical Impact Loads
+
 | **Load Name**             | **Load Type** |     **Load Location**     | **Magnitude** |
 |---------------------------|:-------------:|:-------------------------:|:-------------:|
 | Single-Sided Impact Force |    Bearing    | Ball Bearing Contact Area |     2090 N    |
@@ -185,7 +189,9 @@ Figure 7 – Motor and pulley system turning a wheel
 Next, the design has enough tool clearance to be installed. Lastly, the design allows for tensioning of the belt, allowing the motor to properly drive the wheels (Figure 7). Overall, the truck can function as a combined truck and motor mount.
 
 (Insert pic of skateboard truck alone)
+
 Figure 8 – Nylon 12 model of the final skateboard truck design
+
 The design itself has a truss-like shape with thin members (Figure 8). This is likely a result of weight optimization, keeping only the most necessary material for supporting the loads. The design is a little asymmetrical too, likely because there is more loading on the motor mount side. Lastly, the motor mount area is very minimal, cutting tons of material that would be present in more regular designs. While this area feels flexible on the Nylon 12 model, stainless steel 17-4 PH is about 20 times stronger and 100 times stiffer than Nylon 12. If this is still not enough, more loading scenarios could be added such as one for accidentally dropping the truck. However, lightweighting was prioritized to explore the full capabilities of generative design. The final design weighs 332.5g. For reference, that is the average weight of the truck alone for many commercial designs.
 
 ## About Generative Design
