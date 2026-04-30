@@ -8,6 +8,9 @@ gallery:
   - url: /assets/img/Truck-Render.png
     image_path: /assets/img/Truck-Render.png
     alt: "Render of the skateboard truck with wheels, motor, and pulley"
+  - url: /assets/img/Truck-Render-Aluminum.png
+    image_path: /assets/img/Truck-Render-Aluminum.png
+    alt: "Render of the unused skateboard truck made of aluminum with wheels, motor, and pulley"
   - url: /assets/img/Truck-Generative-Design-Workspace.png
     image_path: /assets/img/Truck-Generative-Design-Workspace.png
     alt: "Picture of the generative design workspace used to generate the design"
