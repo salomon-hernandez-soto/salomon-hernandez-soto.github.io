@@ -2,8 +2,8 @@
 title: "Generative Design Skateboard Truck"
 excerpt: "This design combines a skateboard truck and motor mount as one assembly, weighing 332.5 g."
 header:
-  image: /assets/img/PFF-Banner.JPEG
-  teaser: /assets/img/PFF-Thumbnail.JPEG
+  image: /assets/img/Truck-Thumbnail.JPEG
+  teaser: /assets/img/Truck-Thumbnail.JPEG
 gallery:
   - url: /assets/img/Truck-Render.png
     image_path: /assets/img/Truck-Render.png
@@ -188,7 +188,7 @@ Figure 7 – Motor and pulley system turning a wheel
 
 Next, the design has enough tool clearance to be installed. Lastly, the design allows for tensioning of the belt, allowing the motor to properly drive the wheels (Figure 7). Overall, the truck can function as a combined truck and motor mount.
 
-(Insert pic of skateboard truck alone)
+<img src="/assets/img/Truck-Pic.JPEG" alt="Nylon 12 model of the generative design skateboard truck in isolation" style="width:800px;"/>
 
 Figure 8 – Nylon 12 model of the final skateboard truck design
 
