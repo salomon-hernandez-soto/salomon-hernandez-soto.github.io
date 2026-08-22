@@ -1,5 +1,5 @@
 ---
-title: "Making That Matters"
+title: "Making Things That Matter"
 layout: splash
 header:
   overlay_color: "#000"
