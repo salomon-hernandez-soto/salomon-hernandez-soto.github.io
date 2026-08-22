@@ -5,20 +5,20 @@ title: "About Salomon Hernandez-Soto"
 ---
 
 ## Objective Statement
-I am currently seeking an internship related to engineering design or manufacturing, which will allow me to leverage my CAD skills and sharpen my design methodology.
+I am currently seeking a full-time role/internship in product design or an adjacent field, which will allow me to take high ownership in my designs.
 
 ## Education
 
-Salomon is currently a junior in Mechanical Engineering. He has recently been specializing in engineering design and manufacturing courses. 
+I am currently a senior in Mechanical Engineering. I've been specializing in engineering design and manufacturing courses. 
 
 * Vanderbilt University
   * B.E Mechanical Engineering
-  * Junior, graduating May 2027
+  * Senior, graduating May 2027
   * GPA : 4.0 / 4.0
 
 ## Technical Skills
 
-Salomon has a number of technical skills which he has built through increasingly complex projects and through dedicated engagement with rigorous coursework.
+I have a number of technical skills which I've has built through increasingly complex projects and through dedicated engagement with rigorous coursework.
 
 * CAD (SolidWorks, Fusion360, AutoCAD)
 * Fused Filament Fabrication (FFF)
@@ -34,7 +34,7 @@ Salomon has a number of technical skills which he has built through increasingly
 
 ## Relevant Classes
 
-Salomon has completed or is completing the following notable classes.
+I have completed or are currently completing the following notable classes.
 
 * Additive and Polymer Based Manufacturing
 * Make it Real and Make it Matter
@@ -46,27 +46,24 @@ Salomon has completed or is completing the following notable classes.
 * Mechanics of Materials
 * Dynamics
 * Fluid Mechanics
-* Thermodynamics
+* Heat Transfer
 
 ## Work Experience
-Receiver/Stocker, Lowe's, June 2025 - Current
-* Unload and process 600–1200 units per shift as part of a 4-person receiving team, coordinating material flow via conveyor systems, pallet jacks, and handcarts
-* Stock merchandise across all store departments, organizing inventory for accessibility and efficient customer retrieval
-* Maintain safe working conditions through adherence to equipment and material handling procedures
-* Support on-floor customer needs while stocking, contributing to additional point-of-sale purchases through product location and usage guidance
-* Collaborate with delivery drivers and receiving staff to verify shipments and ensure accurate inventory distribution to departments
+Product Design Intern, Kanbol, May 2026 - August 2026
+* Designed 26 of the 37 products in Kanbol’s current product catalog while optimizing 6 more, supporting product development for 10 customers while reducing design lead time by 3 weeks per product.
+* Leveraged FEA and design principles to optimize product geometry and dimensions, increasing stiffness by as much as 28.7%.
+* Reduced physical prototype iteration time by 1 week per product by leveraging FDM and rapid-prototyping techniques.
+* Advanced 5 products to prototype manufacturing within 8 weeks, incorporating weekly customer feedback while balancing hot press manufacturing, material, cost, and packaging constraints.
+* Developed an original latching mechanism selected for intellectual-property evaluation.
 
+Receiver/Stocker, Lowe's, June 2025 - May 2026
+* Unload and process 600–1200 units per shift as part of a 4-person receiving team, coordinating material flow via conveyor systems, pallet jacks, and handcarts
 
 Lab Worker, VSVS, Sept. 2023 - Jan. 2024
 * Managed inventory of science lesson kits, ensuring availability and organization for volunteers while contributing to a pace of approx. 20 lessons/week
-* Logged all inventory on a weekly basis, ensuring the complete tracking of kits and materials in and out of the lab
-* Worked independently through following lab documentation for procedures and through following documents detailing urgent tasks, without explicit instruction
-* Conducted regular cleaning, restocking, and refreshing of lesson kits to maintain quality and functionality
-* Assisted volunteers in understanding lesson materials and provided support during teaching sessions to grade-school students
-* Diagnosed and repaired broken electronics and tools, facilitating smooth operation of the lab
 
 ## Publications/Appearances
-[2027 TOM Makeathon covered here.](https://vanderbilthustler.com/2025/10/28/students-engineer-solutions-for-people-with-disabilities-at-tikkun-olam-makerss-eighth-annual-makeathon/)
+[2025 TOM Makeathon covered here.](https://vanderbilthustler.com/2025/10/28/students-engineer-solutions-for-people-with-disabilities-at-tikkun-olam-makerss-eighth-annual-makeathon/)
 
 ## Certificates 
 Certified SOLIDWORKS Associate
