@@ -43,7 +43,27 @@ The electrical wiring consists of the two MPU 6050 6-axis IMU’s, three DSSERVO
 In the code, the two IMU’s use their accelerometers and gyroscopes to talk to the Arduino through I2C serial communication. This data is then converted to yaw-pitch-roll angles by the IMU’s digital motion processor, and the Arduino processes these angles to pulse-width output for the three larger servos. Alongside this, the potentiometer data is also collected and processed into pulse-width output for the smaller servo. The latching button is used to pause the device, the momentary button is used to calibrate the IMU’s while the device is paused, and the LED shows the status of the device, which can be red for paused, purple for calibrating, green for running, or yellow if the device is unpaused without having calibrated at least once.
 
 ## Assembly and Use Instructions
-(Insert BOM Tables)
+Table 1 - Bill of Materials
+
+| **Part Name**                   | **Count** |
+|---------------------------------|:---------:|
+| M3x10 Screws                    |     3     |
+| M3x12 Screws                    |     7     |
+| M3x25 Screws                    |     2     |
+| M5x10 Screws                    |     2     |
+| M5x16 Screws                    |     4     |
+| M2x10 Thread Forming Screw      |     1     |
+| M3x2 Nut                        |     11    |
+| M5x9.5 Heat Set Insert          |     6     |
+| 35 kg*cm DSSERVO Motor          |     3     |
+| TowerPro MG92R Servo Motor      |     1     |
+| MPU-6050 6-axis IMU's           |     2     |
+| Arduino Uno R3                  |     1     |
+| Potentiometer                   |     1     |
+| Push Button                     |     1     |
+| Latching Button                 |     1     |
+| RGB LED                         |     1     |
+| Mean Well RT50D DC Power Supply |     1     |
 
 (Insert assembly instruction list)
 
