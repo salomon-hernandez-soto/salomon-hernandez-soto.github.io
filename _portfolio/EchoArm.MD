@@ -21,14 +21,30 @@ This project was made as a full exercise of my mechatronics skillset. I decided 
 
 The EchoArm functions as a proof-of-concept of these ideas, a showcase of full-stack electromechanical product design, and as an expression of my joy for design, because this was a fun project from start to finish.
 
-## Functional Requirements
-
+## Problem Statement
+How might I create a human-controllable robot arm which demonstrates a proof-of-concept for a remote-controlled actuator arm, which can lift at least 500g, has a hemispherical range of motion, and costs under $200 to create?
 
 ## CAD Model
 <iframe src="https://vanderbilt643.autodesk360.com/shares/public/SH90d2dQT28d5b602811b1b77df3680c571c?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
 ## Design
+(Insert GIF or video of me using the EchoArm)
+
+Constructing and integrating the EchoArm includes knowing about the mechanical assembly, the electrical wiring, and the code driving the design. 
+
+(Insert pic of EchoArm in a 3D print slicer)
+
+The mechanical parts of the EchoArm are all 3D-printed components made of PLA filament, alongside off-the-shelf parts like fasteners and heat-set inserts. The box features space for a DC power supply, a breadboard, an Arduino Uno R3, and a servo motor. The robot base features slots for the base servo horn and for the shoulder servo body. The first arm link has slots for the shoulder servo horn and elbow servo body. The second arm link has slots for the elbow servo horn and for the gripper assembly. Finally, the gripper assembly has space for a smaller servo and servo claws, which are 4-bar linkages and move with a geared assembly that is attached to the plastic servo horn.
+
+(Insert wiring diagram pic and IRL wiring pic)
+
+The electrical wiring consists of the two MPU 6050 6-axis IMU’s, three DSSERVO 35 kg*cm servos, one TowerPro SG92R servo, one potentiometer, one momentary push button, one latching button, an RGB LED, a DC power supply, a breadboard, and an Arduino Uno R3. The IMU’s use 3.3V power from the Arduino, the LED’s and buttons use digital 0V/5V output from the Arduino, and the servos use 5V power from the DC power supply and digital output from the Arduino for all pulse-width data.
+
+In the code, the two IMU’s use their accelerometers and gyroscopes to talk to the Arduino through I2C serial communication. This data is then converted to yaw-pitch-roll angles by the IMU’s digital motion processor, and the Arduino processes these angles to pulse-width output for the three larger servos. Alongside this, the potentiometer data is also collected and processed into pulse-width output for the smaller servo. The latching button is used to pause the device, the momentary button is used to calibrate the IMU’s while the device is paused, and the LED shows the status of the device, which can be red for paused, purple for calibrating, green for running, or yellow if the device is unpaused without having calibrated at least once.
 
 ## Assembly and Use Instructions
+(Insert BOM Tables)
+
+(Insert assembly instruction list)
 
 {% include gallery caption="Assorted related pictures from the bike phone holder project." %}
